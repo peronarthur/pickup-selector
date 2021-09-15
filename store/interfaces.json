@@ -1,0 +1,12 @@
+{
+  "product-price-tt": {
+    "component": "PickupSelector",
+    "composition": "children"
+  },
+  "pickup-selector-zipcode-input": {
+    "component": "ZipcodeInput"
+  },
+  "pickup-selector-sku-selector": {
+    "component": "SkuSelector"
+  }
+}
