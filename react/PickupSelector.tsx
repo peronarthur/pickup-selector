@@ -20,7 +20,7 @@ const PickupSelector: StorefrontFunctionComponent = ({ children }) => {
 }
 
 PickupSelector.schema = {
-  title: 'PickupSelector',
+  title: 'admin/editor.pickup-selector.title',
   type: 'object',
 }
 

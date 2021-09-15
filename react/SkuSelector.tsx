@@ -1,10 +1,13 @@
 import React, { useContext, useMemo } from 'react'
 import { Dropdown } from 'vtex.styleguide'
+import { useIntl } from 'react-intl'
 
 import ShippingContext from './context/shippingContext'
-import { editor, skuSelector } from './utils/messages'
+import { skuSelector } from './utils/messages'
 
 const SkuSelector: StorefrontFunctionComponent = () => {
+  const intl = useIntl()
+
   const { items, selectedItem, changeSelectedItem } =
     useContext(ShippingContext)
 
@@ -17,7 +20,7 @@ const SkuSelector: StorefrontFunctionComponent = () => {
   return (
     <div className="mb4 mw5">
       <Dropdown
-        label={skuSelector.label}
+        label={intl.formatMessage(skuSelector.label)}
         options={options}
         value={selectedItem.itemId}
         onChange={changeSelectedItem}
@@ -27,7 +30,7 @@ const SkuSelector: StorefrontFunctionComponent = () => {
 }
 
 SkuSelector.schema = {
-  title: editor.skuSelector.title,
+  title: 'admin/editor.pickup-selector.sku-selector.title',
   type: 'object',
 }
 
