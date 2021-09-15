@@ -1,5 +1,5 @@
 {
-  "product-price-tt": {
+  "pickup-selector": {
     "component": "PickupSelector",
     "composition": "children"
   },
