@@ -1,4 +1,7 @@
 {
-  "admin/test": "test",
-  "store/test": "test"
+  "admin/editor.pickup-selector.title": "Pickup selector",
+  "admin/editor.pickup-selector.zipcode-input.title": "Zipcode input",
+  "admin/editor.pickup-selector.sku-selector.title": "SKU selector",
+  "pickup-selector.zipcode-input.label": "Zipcode",
+  "pickup-selector.sku-selector.label": "SKU"
 }
