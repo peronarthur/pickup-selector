@@ -3,5 +3,6 @@
   "admin/editor.pickup-selector.zipcode-input.title": "Código postal",
   "admin/editor.pickup-selector.sku-selector.title": "Selector de SKU",
   "pickup-selector.zipcode-input.label": "Código postal",
-  "pickup-selector.sku-selector.label": "SKU"
+  "pickup-selector.sku-selector.label": "SKU",
+  "pickup-selector.search-sla-button.label": "Buscar"
 }

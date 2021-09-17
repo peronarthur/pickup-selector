@@ -3,5 +3,6 @@
   "admin/editor.pickup-selector.zipcode-input.title": "CEP",
   "admin/editor.pickup-selector.sku-selector.title": "Seletor de SKU",
   "pickup-selector.zipcode-input.label": "CEP",
-  "pickup-selector.sku-selector.label": "SKU"
+  "pickup-selector.sku-selector.label": "SKU",
+  "pickup-selector.search-sla-button.label": "Buscar"
 }
