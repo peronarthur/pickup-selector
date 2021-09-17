@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useState, useCallback } from 'react'
 import { Input } from 'vtex.styleguide'
 import { useIntl } from 'react-intl'
 
@@ -7,17 +7,27 @@ import { zipcodeInput } from './utils/messages'
 
 const ZipcodeInput: StorefrontFunctionComponent = () => {
   const intl = useIntl()
+  const [localZipcode, setLocalZipcode] = useState<string>('')
 
-  const { zipcode, setZipcode } = useContext(ShippingContext)
+  const { setZipcode } = useContext(ShippingContext)
+
+  const onChange = useCallback(
+    (e: React.ChangeEvent<HTMLInputElement>) => {
+      if (e.target.value.length === 8) {
+        setZipcode(e.target.value)
+      }
+
+      setLocalZipcode(e.target.value)
+    },
+    [setZipcode, setLocalZipcode]
+  )
 
   return (
     <div className="mb4">
       <Input
         label={intl.formatMessage(zipcodeInput.label)}
-        value={zipcode}
-        onChange={(e: React.ChangeEvent<HTMLInputElement>) =>
-          setZipcode(e.target.value)
-        }
+        value={localZipcode}
+        onChange={onChange}
       />
     </div>
   )
