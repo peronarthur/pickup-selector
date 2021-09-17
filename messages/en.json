@@ -1,7 +1,7 @@
 {
   "admin/editor.pickup-selector.title": "Pickup selector",
   "admin/editor.pickup-selector.zipcode-input.title": "Zipcode input",
-  "admin/editor.pickup-selector.sku-selector.title": "SKU selector",
+  "admin/editor.pickup-selector.search-sla-button.title": "Search SLA button",
   "pickup-selector.zipcode-input.label": "Zipcode",
   "pickup-selector.sku-selector.label": "SKU",
   "pickup-selector.search-sla-button.label": "Search"

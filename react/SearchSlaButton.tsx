@@ -63,7 +63,7 @@ const SearchSlaButton: StorefrontFunctionComponent = () => {
 }
 
 SearchSlaButton.schema = {
-  title: 'admin/editor.pickup-selector.zipcode-input.title',
+  title: 'admin/editor.pickup-selector.search-sla-button.title',
   type: 'object',
 }
 

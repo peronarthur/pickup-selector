@@ -7,9 +7,7 @@ interface ShippingContextType {
   selectedItem: Partial<Item>
   selectedQuantity: string
   pickupSlas: PickupOption[]
-  items: Item[]
   setZipcode: (zipcode: string) => void
-  changeSelectedItem: (_: unknown, selectedValue: string) => void
   setPickupSlas: (pickupOption: PickupOption[]) => void
 }
 
@@ -18,9 +16,7 @@ const ShippingContext = React.createContext<ShippingContextType>({
   selectedItem: {},
   selectedQuantity: '0',
   pickupSlas: [],
-  items: [],
   setZipcode: () => {},
-  changeSelectedItem: () => {},
   setPickupSlas: () => {},
 })
 
