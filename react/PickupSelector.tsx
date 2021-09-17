@@ -10,9 +10,7 @@ const PickupSelector: StorefrontFunctionComponent = ({ children }) => {
 
   return (
     <ShippingProvider>
-      <div
-        className={`${handles.pickupSelectorContainer} flex-s justify-between-s`}
-      >
+      <div className={`${handles.pickupSelectorContainer}`}>
         {React.Children.map(children, (child) => child)}
       </div>
     </ShippingProvider>
