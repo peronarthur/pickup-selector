@@ -6,7 +6,7 @@
   "pickup-selector-zipcode-input": {
     "component": "ZipcodeInput"
   },
-  "pickup-selector-sku-selector": {
-    "component": "SkuSelector"
+  "pickup-selector-search-sla-button": {
+    "component": "SearchSlaButton"
   }
 }

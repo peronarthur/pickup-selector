@@ -1,0 +1,27 @@
+query GET_SHIPPING_SLA(
+  $items: [ShippingItem]
+  $postalCode: String
+  $country: String
+) {
+  shippingSLA(items: $items, postalCode: $postalCode, country: $country)
+    @context(provider: "vtex.checkout-graphql") {
+    pickupOptions {
+      id
+      address {
+        addressId
+        street
+        state
+      }
+      deliveryChannel
+      price
+      estimate
+      friendlyName
+      storeDistance
+      transitTime
+      businessHours {
+        closed
+        closingTime
+      }
+    }
+  }
+}

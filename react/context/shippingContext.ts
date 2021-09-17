@@ -1,20 +1,23 @@
 import React from 'react'
+import type { PickupOption } from 'vtex.checkout-graphql'
 import type { Item } from 'vtex.product-context/react/ProductTypes'
 
 interface ShippingContextType {
   zipcode: string
   selectedItem: Partial<Item>
-  items: Item[]
+  selectedQuantity: string
+  pickupSlas: PickupOption[]
   setZipcode: (zipcode: string) => void
-  changeSelectedItem: (_: unknown, selectedValue: string) => void
+  setPickupSlas: (pickupOption: PickupOption[]) => void
 }
 
 const ShippingContext = React.createContext<ShippingContextType>({
   zipcode: '',
   selectedItem: {},
-  items: [],
+  selectedQuantity: '0',
+  pickupSlas: [],
   setZipcode: () => {},
-  changeSelectedItem: () => {},
+  setPickupSlas: () => {},
 })
 
 export default ShippingContext
