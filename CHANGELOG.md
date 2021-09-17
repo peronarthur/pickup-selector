@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- SearchSlaButton block
+- getPickupSla query to get the pickup points info
+
+### Changed
+
+- Fix the zipcode input on change logic
+- Update PickupSelector container style
+
 ## [0.1.0] - 2021-09-16
 
 ### Added
