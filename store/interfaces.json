@@ -8,5 +8,16 @@
   },
   "pickup-selector-search-sla-button": {
     "component": "SearchSlaButton"
+  },
+  "pickup-selector-sla-list": {
+    "component": "PickupSlaList",
+    "composition": "children"
+  },
+  "pickup-selector-option-card": {
+    "component": "OptionCard",
+    "composition": "children"
+  },
+  "pickup-selector-option-card-pickup-point-name": {
+    "component": "PickupPointName"
   }
 }
