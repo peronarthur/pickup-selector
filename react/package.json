@@ -5,6 +5,7 @@
     "test": "vtex-test-tools test"
   },
   "dependencies": {
+    "@vtex/styleguide": "^9.145.1",
     "apollo-client": "^2.6.8",
     "react": "^16.12.0",
     "react-apollo": "^3.1.3",
@@ -23,7 +24,7 @@
     "typescript": "3.9.7",
     "vtex.checkout-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-graphql@0.61.3/public/@types/vtex.checkout-graphql",
     "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles",
-    "vtex.pickup-selector": "https://pickupselector--gabrielhosinoio.myvtex.com/_v/private/typings/linked/v1/vtex.pickup-selector@0.1.0+build1631887671/public/@types/vtex.pickup-selector",
+    "vtex.pickup-selector": "https://pickupselector--gabrielhosinoio.myvtex.com/_v/private/typings/linked/v1/vtex.pickup-selector@0.1.1+build1632172043/public/@types/vtex.pickup-selector",
     "vtex.product-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context",
     "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.131.1/public/@types/vtex.render-runtime",
     "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.145.0/public/@types/vtex.styleguide"

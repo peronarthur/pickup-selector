@@ -2,6 +2,9 @@
   "admin/editor.pickup-selector.title": "Pickup selector",
   "admin/editor.pickup-selector.zipcode-input.title": "Zipcode input",
   "admin/editor.pickup-selector.search-sla-button.title": "Search SLA button",
+  "admin/editor.pickup-selector.pickup-sla-list.title": "Pickup point options list",
+  "admin/editor.pickup-selector.option-card.title": "Pickup point option card",
+  "admin/editor.pickup-selector.pickup-point-name.title": "Pickup point name",
   "pickup-selector.zipcode-input.label": "Zipcode",
   "pickup-selector.sku-selector.label": "SKU",
   "pickup-selector.search-sla-button.label": "Search"
