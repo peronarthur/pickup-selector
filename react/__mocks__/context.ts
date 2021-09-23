@@ -15,6 +15,7 @@ const contextValuesMock = {
       deliveryChannel: '',
       price: 1000,
       estimate: '2bd',
+      storeDistance: 0.5675,
       isSelected: false,
       friendlyName: 'Store name',
       businessHours: [
