@@ -7,12 +7,12 @@ const PickupSlaList: StorefrontFunctionComponent = ({ children }) => {
 
   return (
     <div className="mt4 mb4" data-testid="card-list">
-      {pickupSlas.map((option) => {
+      {pickupSlas.map((option, index) => {
         return React.Children.map(children, (child) => {
           if (React.isValidElement(child)) {
             return React.cloneElement(child, {
               key: option.id,
-              cardInfo: option,
+              index,
             })
           }
 
