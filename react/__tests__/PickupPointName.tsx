@@ -14,7 +14,7 @@ describe('PickupPointName', () => {
     const { queryByText } = render(
       <ShippingContext.Provider value={contextValuesMock}>
         <CardContext.Provider value={{ index }}>
-          <PickupPointName name={name} />
+          <PickupPointName />
         </CardContext.Provider>
       </ShippingContext.Provider>
     )
