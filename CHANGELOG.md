@@ -7,6 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Pickup point distance block
+- Pickup point address block
+- Card context
+
+### Changed
+
+- Change the props logic for the blocks inside the card
+
+### Removed
+
+- Boiler component
+
 ## [0.1.2] - 2021-09-21
 
 ### Added
