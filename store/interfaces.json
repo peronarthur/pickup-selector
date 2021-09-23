@@ -19,5 +19,8 @@
   },
   "pickup-selector-option-card-pickup-point-name": {
     "component": "PickupPointName"
+  },
+  "pickup-selector-option-card-pickup-point-address": {
+    "component": "PickupPointAddress"
   }
 }
