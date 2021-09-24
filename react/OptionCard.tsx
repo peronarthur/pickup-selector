@@ -1,7 +1,7 @@
 import React from 'react'
 import { Card } from 'vtex.styleguide'
 
-import CardConxtext from './context/CardContext'
+import CardContext from './context/CardContext'
 
 type CardProps = {
   index: number
@@ -12,7 +12,7 @@ const OptionCard: StorefrontFunctionComponent<CardProps> = ({
   index,
 }) => {
   return (
-    <CardConxtext.Provider value={{ index }}>
+    <CardContext.Provider value={{ index }}>
       <div className="mb4" data-testid="card">
         <Card>
           {React.Children.map(children, (child) => {
@@ -24,7 +24,7 @@ const OptionCard: StorefrontFunctionComponent<CardProps> = ({
           })}
         </Card>
       </div>
-    </CardConxtext.Provider>
+    </CardContext.Provider>
   )
 }
 
