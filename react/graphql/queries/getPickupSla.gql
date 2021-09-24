@@ -9,6 +9,9 @@ query GET_SHIPPING_SLA(
       id
       address {
         addressId
+        city
+        neighborhood
+        number
         street
         state
       }

@@ -29,10 +29,11 @@ describe('OptionCard', () => {
   }
 
   const children = [<PickupPointName key="1" name={cardInfo.friendlyName} />]
+  const index = 0
 
   it('Should show the card', () => {
     const { container } = render(
-      <OptionCard cardInfo={cardInfo} children={children} />
+      <OptionCard children={children} index={index} />
     )
 
     expect(container).toBeTruthy()
@@ -40,7 +41,7 @@ describe('OptionCard', () => {
 
   it('Should render children props', () => {
     const { getByTestId } = render(
-      <OptionCard cardInfo={cardInfo} children={children} />
+      <OptionCard children={children} index={index} />
     )
 
     const card = getByTestId('card')

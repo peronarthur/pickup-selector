@@ -1,34 +1,30 @@
 import React from 'react'
-import type { PickupOption } from 'vtex.checkout-graphql'
 import { Card } from 'vtex.styleguide'
 
-import { setCardChildrenProps } from './utils/setCardChildrenProps'
+import CardContext from './context/CardContext'
 
 type CardProps = {
-  cardInfo: PickupOption
+  index: number
 }
 
 const OptionCard: StorefrontFunctionComponent<CardProps> = ({
-  cardInfo,
   children,
+  index,
 }) => {
   return (
-    <div className="mb4" data-testid="card">
-      <Card>
-        {React.Children.map(children, (child) => {
-          if (React.isValidElement(child)) {
-            const { props } = child
+    <CardContext.Provider value={{ index }}>
+      <div className="mb4" data-testid="card">
+        <Card>
+          {React.Children.map(children, (child) => {
+            if (React.isValidElement(child)) {
+              return React.cloneElement(child)
+            }
 
-            return React.cloneElement(
-              child,
-              setCardChildrenProps(props, cardInfo)
-            )
-          }
-
-          return null
-        })}
-      </Card>
-    </div>
+            return null
+          })}
+        </Card>
+      </div>
+    </CardContext.Provider>
   )
 }
 

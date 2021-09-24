@@ -5,7 +5,10 @@
   "admin/editor.pickup-selector.pickup-sla-list.title": "Pickup point options list",
   "admin/editor.pickup-selector.option-card.title": "Pickup point option card",
   "admin/editor.pickup-selector.pickup-point-name.title": "Pickup point name",
+  "admin/editor.pickup-selector.pickup-point-address.title": "Pickup point address",
+  "admin/editor.pickup-selector.pickup-point-distance.title": "Pickup point distance",
   "pickup-selector.zipcode-input.label": "Zipcode",
   "pickup-selector.sku-selector.label": "SKU",
-  "pickup-selector.search-sla-button.label": "Search"
+  "pickup-selector.search-sla-button.label": "Search",
+  "pickup-selector.pickup-point-distance.error.label": "Unknown distance"
 }
