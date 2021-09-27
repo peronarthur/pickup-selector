@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add getAddress query
+
+### Changed
+
+- Update SearchSlaButton to save the selected address using the postal code
+
 ## [0.1.3] - 2021-09-24
 
 ### Added
