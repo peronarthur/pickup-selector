@@ -6008,9 +6008,13 @@ vtex-tachyons@^3.2.0:
   version "1.0.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles#336b23ef3a9bcb2b809529ba736783acd405d081"
 
-"vtex.pickup-selector@https://pickupselector--gabrielhosinoio.myvtex.com/_v/private/typings/linked/v1/vtex.pickup-selector@0.1.2+build1632431823/public/@types/vtex.pickup-selector":
-  version "0.1.2"
-  resolved "https://pickupselector--gabrielhosinoio.myvtex.com/_v/private/typings/linked/v1/vtex.pickup-selector@0.1.2+build1632431823/public/@types/vtex.pickup-selector#80cc02151fa68be771ab0284e7d8bbb40b7c99a3"
+"vtex.pickup-selector@https://pickupselector--gabrielhosinoio.myvtex.com/_v/private/typings/linked/v1/vtex.pickup-selector@0.1.3+build1632774477/public/@types/vtex.pickup-selector":
+  version "0.1.3"
+  resolved "https://pickupselector--gabrielhosinoio.myvtex.com/_v/private/typings/linked/v1/vtex.pickup-selector@0.1.3+build1632774477/public/@types/vtex.pickup-selector#8a45a6c48061431322510fd357dc56259a7a0de2"
+
+"vtex.places-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.places-graphql@0.4.0/public/@types/vtex.places-graphql":
+  version "0.4.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.places-graphql@0.4.0/public/@types/vtex.places-graphql#19d8522f344c82c677b474829deb629583def399"
 
 "vtex.product-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context":
   version "0.10.0"
