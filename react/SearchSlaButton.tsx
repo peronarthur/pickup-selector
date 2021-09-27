@@ -8,6 +8,7 @@ import { useCssHandles } from 'vtex.css-handles'
 import ShippingContext from './context/shippingContext'
 import { searchSlaButton } from './utils/messages'
 import GET_SHIPPING_SLA from './graphql/queries/getPickupSla.gql'
+import GET_ADDRESS from './graphql/queries/getAddress.gql'
 import { DEFAULT_SELLER } from './utils/constants'
 import type { PickupSlasResponse } from './typings/pickup'
 
@@ -16,10 +17,15 @@ const CSS_HANDLES = ['searchSlaButtonContainer'] as const
 const SearchSlaButton: StorefrontFunctionComponent = () => {
   const intl = useIntl()
   const { culture } = useRuntime()
-  const handles = useCssHandles(CSS_HANDLES)
+  const { handles } = useCssHandles(CSS_HANDLES)
 
-  const { zipcode, selectedItem, selectedQuantity, setPickupSlas } =
-    useContext(ShippingContext)
+  const {
+    zipcode,
+    selectedItem,
+    selectedQuantity,
+    setPickupSlas,
+    setSelectedAddress,
+  } = useContext(ShippingContext)
 
   const isDisabled = useMemo(
     () => !zipcode || !selectedItem,
@@ -43,16 +49,29 @@ const SearchSlaButton: StorefrontFunctionComponent = () => {
     }
   )
 
+  const [getAddress, addressResponse] = useLazyQuery(GET_ADDRESS, {
+    variables: {
+      postalCode: zipcode,
+      country: culture.country,
+    },
+  })
+
+  const onSearchClick = () => {
+    getPickupSla()
+    getAddress()
+  }
+
   useEffect(() => {
     setPickupSlas(data?.shippingSLA.pickupOptions ?? [])
-  }, [data, loading, setPickupSlas])
+    setSelectedAddress(addressResponse.data?.getAddressFromPostalCode ?? {})
+  }, [addressResponse, data, loading, setPickupSlas, setSelectedAddress])
 
   return (
     <div className={`${handles.searchSlaButtonContainer}`}>
       <Button
         variation="primary"
         disabled={isDisabled}
-        onClick={() => getPickupSla()}
+        onClick={onSearchClick}
         isLoading={loading}
         block
       >
