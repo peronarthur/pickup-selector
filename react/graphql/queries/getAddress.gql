@@ -1,0 +1,18 @@
+query GET_ADDRESS($postalCode: String, $country: String) {
+  getAddressFromPostalCode(postalCode: $postalCode, countryCode: $country)
+    @context(provider: "vtex.places-graphql") {
+    addressId
+    addressType
+    city
+    complement
+    country
+    geoCoordinates
+    neighborhood
+    number
+    postalCode
+    receiverName
+    reference
+    state
+    street
+  }
+}
