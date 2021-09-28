@@ -1,4 +1,4 @@
-import React, { useContext, useMemo, useEffect } from 'react'
+import React, { useContext, useMemo, useEffect, useCallback } from 'react'
 import { Button } from 'vtex.styleguide'
 import { useIntl } from 'react-intl'
 import { useLazyQuery } from 'react-apollo'
@@ -56,10 +56,10 @@ const SearchSlaButton: StorefrontFunctionComponent = () => {
     },
   })
 
-  const onSearchClick = () => {
+  const onSearchClick = useCallback(() => {
     getPickupSla()
     getAddress()
-  }
+  }, [getPickupSla, getAddress])
 
   useEffect(() => {
     setPickupSlas(data?.shippingSLA.pickupOptions ?? [])
