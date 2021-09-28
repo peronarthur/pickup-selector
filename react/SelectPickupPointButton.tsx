@@ -6,7 +6,7 @@ import { useOrderForm } from 'vtex.order-manager/OrderForm'
 import type { Item } from 'vtex.product-context/react/ProductTypes'
 
 import ShippingContext from './context/shippingContext'
-import { searchSlaButton } from './utils/messages'
+import { selectPickupPoint } from './utils/messages'
 import ADD_TO_CART from './graphql/queries/addToCart.gql'
 import SET_SELECTED_ADDRESS from './graphql/queries/setSelectedAddress.gql'
 import SELECT_PICKUP_OPTION from './graphql/queries/selectPickupOption.gql'
@@ -72,14 +72,14 @@ const SelectPickupPointButton: StorefrontFunctionComponent = () => {
   return (
     <div>
       <Button variation="primary" onClick={onClick} isLoading={loading}>
-        {intl.formatMessage(searchSlaButton.label)}
+        {intl.formatMessage(selectPickupPoint.label)}
       </Button>
     </div>
   )
 }
 
 SelectPickupPointButton.schema = {
-  title: 'admin/editor.pickup-selector.search-sla-button.title',
+  title: 'admin/editor.pickup-selector.select-pickup-point-button.title',
   type: 'object',
 }
 
