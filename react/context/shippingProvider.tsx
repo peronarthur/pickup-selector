@@ -1,6 +1,6 @@
 import type { FC } from 'react'
 import React, { useState, useMemo, useEffect } from 'react'
-import type { PickupOption } from 'vtex.checkout-graphql'
+import type { Address, PickupOption } from 'vtex.checkout-graphql'
 import { useProduct } from 'vtex.product-context'
 import type { Item } from 'vtex.product-context/react/ProductTypes'
 
@@ -19,6 +19,8 @@ const ShippingProvider: FC = (props) => {
     productContext?.selectedItem ?? {}
   )
 
+  const [selectedAddress, setSelectedAddress] = useState<Address>({})
+
   const [pickupSlas, setPickupSlas] = useState<PickupOption[]>([])
 
   useEffect(() => {
@@ -31,9 +33,11 @@ const ShippingProvider: FC = (props) => {
         zipcode,
         selectedItem,
         selectedQuantity,
+        selectedAddress,
         pickupSlas,
         setZipcode,
         setPickupSlas,
+        setSelectedAddress,
       }}
     >
       {props.children}

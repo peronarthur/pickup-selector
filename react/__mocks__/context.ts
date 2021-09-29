@@ -2,6 +2,7 @@ const contextValuesMock = {
   zipcode: '',
   selectedItem: {},
   selectedQuantity: '0',
+  selectedAddress: {},
   pickupSlas: [
     {
       id: 'store id',
@@ -30,6 +31,7 @@ const contextValuesMock = {
   ],
   setZipcode: () => {},
   setPickupSlas: () => {},
+  setSelectedAddress: () => {},
 }
 
 export default contextValuesMock
