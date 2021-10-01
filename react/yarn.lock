@@ -6012,6 +6012,14 @@ vtex-tachyons@^3.2.0:
   version "0.11.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.11.1/public/@types/vtex.order-manager#cc658148c5e054900c0d692a26d1ac7c872d9262"
 
+"vtex.pickup-selector@https://testmyenv--gabrielhosino.myvtex.com/_v/private/typings/linked/v1/vtex.pickup-selector@0.2.0+build1633090662/public/@types/vtex.pickup-selector":
+  version "0.2.0"
+  resolved "https://testmyenv--gabrielhosino.myvtex.com/_v/private/typings/linked/v1/vtex.pickup-selector@0.2.0+build1633090662/public/@types/vtex.pickup-selector#20506ecd246962140f831bf4167af10c9897703a"
+
+"vtex.places-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.places-graphql@0.4.0/public/@types/vtex.places-graphql":
+  version "0.4.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.places-graphql@0.4.0/public/@types/vtex.places-graphql#19d8522f344c82c677b474829deb629583def399"
+
 "vtex.product-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context":
   version "0.10.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context#c5e2a97b404004681ee12f4fff7e6b62157786cc"
