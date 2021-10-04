@@ -25,5 +25,8 @@
   },
   "pickup-selector-option-card-pickup-point-distance": {
     "component": "PickupPointDistance"
+  },
+  "pickup-selector-option-card-add-product-button": {
+    "component": "SelectPickupPointButton"
   }
 }

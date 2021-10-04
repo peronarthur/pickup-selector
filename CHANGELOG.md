@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Add add to cart button block
+- Add graphql fragmets for OrderForm
+- Add addToCard, selectPickupPoint and setSeletedAddress mutations
+
 ## [0.2.0] - 2021-09-29
 
 ### Added

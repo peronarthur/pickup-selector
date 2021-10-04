@@ -1,0 +1,8 @@
+# import '../fragments/orderForm.gql'
+
+mutation SET_SELECTED_ADDRESS($address: AddressInput!) {
+  updateSelectedAddress(input: $address)
+    @context(provider: "vtex.checkout-graphql") {
+    ...OrderFormFragment
+  }
+}

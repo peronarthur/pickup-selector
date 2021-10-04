@@ -7,8 +7,10 @@
   "admin/editor.pickup-selector.pickup-point-name.title": "Nome do ponto de retirada",
   "admin/editor.pickup-selector.pickup-point-address.title": "Endereço do ponto de retirada",
   "admin/editor.pickup-selector.pickup-point-distance.title": "Distância do ponto de retirada",
+  "admin/editor.pickup-selector.select-pickup-point-button.title": "Botão de selecionar o ponto de retirada",
   "pickup-selector.zipcode-input.label": "CEP",
   "pickup-selector.sku-selector.label": "SKU",
   "pickup-selector.search-sla-button.label": "Buscar",
-  "pickup-selector.pickup-point-distance.error.label": "Distância desconhecida"
+  "pickup-selector.pickup-point-distance.error.label": "Distância desconhecida",
+  "pickup-selector.select-pickup-point-button.label": "Adicionar ao carrinho"
 }
