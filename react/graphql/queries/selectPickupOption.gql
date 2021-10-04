@@ -1,8 +1,80 @@
-# import '../fragments/orderForm.gql'
-
 mutation SELECT_PICKUP_OPTION($pickupOptionId: String, $itemId: String) {
   selectPickupOption(pickupOptionId: $pickupOptionId, itemId: $itemId)
     @context(provider: "vtex.checkout-graphql") {
-    ...OrderFormFragment
+    id
+    totalizers {
+      id
+      name
+      value
+    }
+    shipping {
+      countries
+      availableAddresses {
+        addressId
+        addressType
+        city
+        complement
+        country
+        neighborhood
+        number
+        postalCode
+        receiverName
+        reference
+        state
+        street
+        isDisposable
+        geoCoordinates
+      }
+      selectedAddress {
+        addressId
+        addressType
+        city
+        complement
+        country
+        neighborhood
+        number
+        postalCode
+        receiverName
+        reference
+        state
+        street
+        isDisposable
+        geoCoordinates
+      }
+      pickupOptions {
+        id
+        address {
+          addressId
+          addressType
+          city
+          complement
+          country
+          neighborhood
+          number
+          postalCode
+          receiverName
+          reference
+          state
+          street
+          isDisposable
+          geoCoordinates
+        }
+        deliveryChannel
+        price
+        estimate
+        isSelected
+        friendlyName
+        additionalInfo
+        storeDistance
+        transitTime
+        businessHours {
+          dayNumber
+          closed
+          closingTime
+          openingTime
+        }
+      }
+      isValid
+    }
   }
 }

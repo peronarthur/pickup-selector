@@ -1,26 +1,6 @@
 const contextValuesMock = {
   zipcode: '',
-  selectedItem: {
-    attachments: [],
-    complementName: 'NAVEL ORANGES GROWN LARGE FRESH FRUIT',
-    ean: '',
-    estimatedDateArrival: null,
-    images: [],
-    kitItems: [],
-    measurementUnit: 'un',
-    name: 'Pack of 1',
-    nameComplete: 'Navel Oranges Grown Large Fresh Fruit Pack of 1',
-    referenceId: [{ Key: 'RefId', Value: '880320a' }],
-    unitMultiplier: 1,
-    variations: [],
-    videos: [],
-    itemId: '1',
-    sellers: [
-      {
-        sellerId: '1',
-      },
-    ],
-  },
+  selectedItem: {},
   selectedQuantity: '1',
   selectedAddress: {
     addressId: null,
