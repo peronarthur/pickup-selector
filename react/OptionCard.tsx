@@ -1,7 +1,10 @@
 import React from 'react'
 import { Card } from 'vtex.styleguide'
+import { useCssHandles } from 'vtex.css-handles'
 
 import CardContext from './context/CardContext'
+
+const CSS_HANDLES = ['pickupPointOptionCard'] as const
 
 type CardProps = {
   index: number
@@ -11,9 +14,14 @@ const OptionCard: StorefrontFunctionComponent<CardProps> = ({
   children,
   index,
 }) => {
+  const { handles } = useCssHandles(CSS_HANDLES)
+
   return (
     <CardContext.Provider value={{ index }}>
-      <div className="mb4" data-testid="card">
+      <div
+        className={`${handles.pickupSelectorContainer} mb4`}
+        data-testid="card"
+      >
         <Card>
           {React.Children.map(children, (child) => {
             if (React.isValidElement(child)) {

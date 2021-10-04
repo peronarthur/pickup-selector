@@ -6,7 +6,7 @@ import ShippingProvider from './context/shippingProvider'
 const CSS_HANDLES = ['pickupSelectorContainer'] as const
 
 const PickupSelector: StorefrontFunctionComponent = ({ children }) => {
-  const handles = useCssHandles(CSS_HANDLES)
+  const { handles } = useCssHandles(CSS_HANDLES)
 
   return (
     <ShippingProvider>

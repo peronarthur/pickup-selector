@@ -4,6 +4,7 @@ import { useIntl } from 'react-intl'
 import { useMutation } from 'react-apollo'
 import { useOrderForm } from 'vtex.order-manager/OrderForm'
 import type { Item } from 'vtex.product-context/react/ProductTypes'
+import { useCssHandles } from 'vtex.css-handles'
 
 import ShippingContext from './context/shippingContext'
 import { selectPickupPoint } from './utils/messages'
@@ -12,8 +13,11 @@ import SET_SELECTED_ADDRESS from './graphql/queries/setSelectedAddress.gql'
 import SELECT_PICKUP_OPTION from './graphql/queries/selectPickupOption.gql'
 import CardContext from './context/CardContext'
 
+const CSS_HANDLES = ['selectPickupPointButtonContainer'] as const
+
 const SelectPickupPointButton: StorefrontFunctionComponent = () => {
   const intl = useIntl()
+  const { handles } = useCssHandles(CSS_HANDLES)
   const { index } = useContext(CardContext)
   const { pickupSlas, selectedAddress, selectedItem, selectedQuantity } =
     useContext(ShippingContext)
@@ -70,7 +74,7 @@ const SelectPickupPointButton: StorefrontFunctionComponent = () => {
   ])
 
   return (
-    <div>
+    <div className={`${handles.selectPickupPointButtonContainer}`}>
       <Button variation="primary" onClick={onClick} isLoading={loading}>
         {intl.formatMessage(selectPickupPoint.label)}
       </Button>
