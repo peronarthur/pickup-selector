@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added 
+
+- Add css handles to all components
+
 ## [0.3.1] - 2021-10-04
 
 ### Changed

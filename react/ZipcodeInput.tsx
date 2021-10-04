@@ -1,12 +1,17 @@
 import React, { useContext, useState, useCallback } from 'react'
 import { Input } from 'vtex.styleguide'
 import { useIntl } from 'react-intl'
+import { useCssHandles } from 'vtex.css-handles'
 
 import ShippingContext from './context/shippingContext'
 import { zipcodeInput } from './utils/messages'
 
+const CSS_HANDLES = ['zipcodeInputContainer'] as const
+
 const ZipcodeInput: StorefrontFunctionComponent = () => {
   const intl = useIntl()
+  const { handles } = useCssHandles(CSS_HANDLES)
+
   const [localZipcode, setLocalZipcode] = useState<string>('')
 
   const { setZipcode } = useContext(ShippingContext)
@@ -23,7 +28,7 @@ const ZipcodeInput: StorefrontFunctionComponent = () => {
   )
 
   return (
-    <div className="mb4">
+    <div className={`${handles.zipcodeInputContainer} mb4`}>
       <Input
         label={intl.formatMessage(zipcodeInput.label)}
         value={localZipcode}
