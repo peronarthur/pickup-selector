@@ -25,7 +25,7 @@
     "vtex.checkout-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-graphql@0.62.0/public/@types/vtex.checkout-graphql",
     "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles",
     "vtex.order-manager": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.11.1/public/@types/vtex.order-manager",
-    "vtex.pickup-selector": "https://pickupselector--gabrielhosinoio.myvtex.com/_v/private/typings/linked/v1/vtex.pickup-selector@0.2.0+build1633090968/public/@types/vtex.pickup-selector",
+    "vtex.pickup-selector": "https://pickupselector--gabrielhosinoio.myvtex.com/_v/private/typings/linked/v1/vtex.pickup-selector@0.3.0+build1633357704/public/@types/vtex.pickup-selector",
     "vtex.places-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.places-graphql@0.4.0/public/@types/vtex.places-graphql",
     "vtex.product-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context",
     "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.2/public/@types/vtex.render-runtime",
