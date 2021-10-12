@@ -1,4 +1,4 @@
-import React, { useContext } from 'react'
+import React, { useContext, useMemo } from 'react'
 import { useIntl } from 'react-intl'
 import { useCssHandles } from 'vtex.css-handles'
 
@@ -23,7 +23,7 @@ const PickupPointDistance: StorefrontFunctionComponent<PickupPointDistanceProps>
     const { storeDistance } = pickupSlas[index]
     const systemUnit = distanceSystem === 'metric' ? 'Km' : 'Mi'
 
-    const formatDistance = () => {
+    const formatDistance = useMemo(() => {
       if (storeDistance) {
         if (distanceSystem === 'imperial') {
           const calculateImperial = storeDistance * IMPERIAL_SYSTEM_MULTIPLIER
@@ -35,14 +35,14 @@ const PickupPointDistance: StorefrontFunctionComponent<PickupPointDistanceProps>
       }
 
       return intl.formatMessage(pickupPointDistance.label)
-    }
+    }, [distanceSystem, storeDistance, intl, systemUnit])
 
     return (
       <p
         className={`${handles.pickupPointDistance} t-small mw6`}
         data-testid="distance"
       >
-        {formatDistance()}
+        {formatDistance}
       </p>
     )
   }
