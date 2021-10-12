@@ -8,9 +8,11 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- DOCS-IGNORE:end -->
 
+> 🚧 THIS IS A WORK IN PROGRESS AND SHOULD NOT BE USED IN PRODUCTION!
+
 The pickup point selector app adds a block where the client can add a product to cart and select a pickup point for it with the same action. The list of options is created by running a simulation using the selected SKU and the zipcode the client inputed.
 
-> Warning: This app should only be used inside the product page, since one of its dependencies is the product-context
+> 🚨 Warning: This app should only be used inside the product page, since one of its dependencies is the product-context
 
 
 ![Media Placeholder](https://user-images.githubusercontent.com/52087100/71204177-42ca4f80-227e-11ea-89e6-e92e65370c69.png)
@@ -55,7 +57,7 @@ Declare the app's main block in a given theme template or inside another block f
   }
 ```
 
-> Note that the blocks `pickup-selector-zipcode-input`, `pickup-selector-search-sla-button` and `pickup-selector-sla-list` are **mandatory** inside the main block. But you can use them in any order you want. You can also use the flex-layout if needed.
+> ℹ️ Note that the blocks `pickup-selector-zipcode-input`, `pickup-selector-search-sla-button` and `pickup-selector-sla-list` are **mandatory** inside the main block. But you can use them in any order you want. You can also use the flex-layout if needed.
 
 ### 3. Configuring the `pickup-selector-sla-list`;
 
@@ -133,6 +135,8 @@ Below you can see and example of this:
 ```
 
 Using the configuration above the end result would look like this:
+
+![image](https://user-images.githubusercontent.com/8519076/136956522-eb7fab05-66dd-4356-9fe2-62d857e32341.png)
 
 ## Customization
 
