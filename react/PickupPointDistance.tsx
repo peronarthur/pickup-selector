@@ -4,7 +4,7 @@ import { useCssHandles } from 'vtex.css-handles'
 
 import CardContext from './context/CardContext'
 import ShippingContext from './context/shippingContext'
-import { DECIMALS } from './utils/constants'
+import { DECIMALS, IMPERIAL_SYSTEM_MULTIPLIER } from './utils/constants'
 import { pickupPointDistance } from './utils/messages'
 
 const CSS_HANDLES = ['pickupPointDistance'] as const
@@ -25,9 +25,9 @@ const PickupPointDistance: StorefrontFunctionComponent<PickupPointDistanceProps>
 
     const formatDistance = () => {
       if (storeDistance) {
-        const calculateImperial = storeDistance * 0.62137
-
         if (distanceSystem === 'imperial') {
+          const calculateImperial = storeDistance * IMPERIAL_SYSTEM_MULTIPLIER
+
           return `${calculateImperial.toFixed(DECIMALS)} ${systemUnit}`
         }
 
