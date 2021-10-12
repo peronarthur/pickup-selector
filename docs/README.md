@@ -1,6 +1,6 @@
-=� Use this project, [contribute](https://github.com/{OrganizationName}/{AppName}) to it or open issues to help evolve it using [Store Discussion](https://github.com/vtex-apps/store-discussion).
+📢 Use this project, [contribute](https://github.com/vtex-apps/pickup-selector) to it or open issues to help evolve it using [Store Discussion](https://github.com/vtex-apps/store-discussion).
 
-# APP NAME
+# Pickup point selector
 
 <!-- DOCS-IGNORE:start -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
@@ -8,88 +8,152 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- DOCS-IGNORE:end -->
 
-Under the app's name, you should explain the topic, giving a **brief description** of its **functionality** in a store when installed.
+The pickup point selector app adds a block where the client can add a product to cart and select a pickup point for it with the same action. The list of options is created by running a simulation using the selected SKU and the zipcode the client inputed.
 
-Next, **add media** (either an image of a GIF) with the rendered components, so that users can better understand how the app works in practice. 
+> Warning: This app should only be used inside the product page, since one of its dependencies is the product-context
+
 
 ![Media Placeholder](https://user-images.githubusercontent.com/52087100/71204177-42ca4f80-227e-11ea-89e6-e92e65370c69.png)
 
-## Configuration 
+## Configuration
 
-In this section, you first must **add the primary instructions** that will allow users to use the app's blocks in their store, such as:
+You can follow the steps to configure the app on your store theme
 
-1. Adding the app as a theme dependency in the `manifest.json` file;
-2. Declaring the app's main block in a given theme template or inside another block from the theme.
+### 1. Add the app as a theme dependency in the `manifest.json` file;
+```json
+  "dependencies": {
+    "vtex.pickup-selector": "0.x"
+  }
+```
 
-Remember to add a table with all blocks exported by the app and their descriptions. You can verify an example of it on the [Search Result documentation](https://vtex.io/docs/components/all/vtex.search-result@3.56.1/). 
+Now, you are able to use all the blocks exported by the pickup-selector app. Check out the full list below:
 
-Next, add the **props table** containing your block's props. 
+| Block name                 | Description                     |
+| -------------------------- | ------------------------------- |
+| `pickup-selector`          | Main block |
+| `pickup-selector-zipcode-input`  | Shows the zipcode input |
+| `pickup-selector-search-sla-button` | Button used to search the pickup SLA options based on the zipcode inputed and the selected SKU |
+| `pickup-selector-sla-list`         | List that shows the card with the pickup options avaiable |
+| `pickup-selector-option-card`         | Card with the pickup option information   |
+| `pickup-selector-option-card-pickup-point-name`      | Pickup point name |
+| `pickup-selector-option-card-pickup-point-address`      | Pickup point address |
+| `pickup-selector-option-card-pickup-point-distance`      | Pickup point distance(in Km) |
+| `pickup-selector-option-card-pickup-point-sla`  | Pickup point SLA |
+| `pickup-selector-option-card-add-product-button`      | Button that will add the product to cart and select the pickup point |
 
-If the app exports more than one block, create several tables - one for each block. For example:
+### 2. Add the main block;
 
-### `block-1` props
+Declare the app's main block in a given theme template or inside another block from the theme.
 
-| Prop name    | Type            | Description    | Default value                                                                                                                               |
-| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
-| `XXXXX`      | `XXXXXX`       | XXXXXXXX         | `XXXXXX`        |
+```json
+  "pickup-selector": {
+    "children": [
+      "pickup-selector-zipcode-input",
+      "pickup-selector-search-sla-button",
+      "pickup-selector-sla-list"
+    ]
+  }
+```
 
+> Note that the blocks `pickup-selector-zipcode-input`, `pickup-selector-search-sla-button` and `pickup-selector-sla-list` are **mandatory** inside the main block. But you can use them in any order you want. You can also use the flex-layout if needed.
 
-### `block-2` props
+### 3. Configuring the `pickup-selector-sla-list`;
 
-| Prop name    | Type            | Description    | Default value                                                                                                                               |
-| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
-| `XXXXX`      | `XXXXXX`       | XXXXXXXX         | `XXXXXX`        |
+The only block that should be used inside this one is the `pickup-selector-option-card`. We do this so that you can be free to style the option card as you want, and we will use that as a template all the options.
 
-Prop types are: 
+```json
+  "pickup-selector-sla-list": {
+    "children": [
+      "pickup-selector-option-card"
+    ]
+  }
+```
 
-- `string` 
-- `enum` 
-- `number` 
-- `boolean` 
-- `object` 
-- `array` 
+### 4. Configuring the `pickup-selector-option-card`
 
-When documenting a prop whose type is `object` or `array` another prop table will be needed. You can create it following the example below:
+You are free to style this block as you want. 
+We have some blocks in the app that will help with the information about the pickup point. They are the following:
 
-- `propName` object:
+- `pickup-selector-option-card-pickup-point-name`
+- `pickup-selector-option-card-pickup-point-address`
+- `pickup-selector-option-card-pickup-point-distance`
+- `pickup-selector-option-card-pickup-point-sla`
 
-| Prop name    | Type            | Description    | Default value                                                                                                                               |
-| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
-| `XXXXX`      | `XXXXXX`       | XXXXXXXX         | `XXXXXX`        |
+The only **mandatory block** inside this one is the `pickup-selector-option-card-add-product-button`.
 
+Below you can see and example of this:
 
-Remember to also use this Configuration section to  **showcase any necessary disclaimer** related to the app and its blocks, such as the different behavior it may display during its configuration. 
+```json
+  "pickup-selector-option-card": {
+    "children": [
+      "flex-layout.col#card-container"
+    ]
+  },
 
-## Modus Operandi *(not mandatory)*
+  "flex-layout.col#card-container": {
+    "children": [
+      "flex-layout.row#card-header",
+      "product-separator",
+      "flex-layout.row#card-body"
+    ]
+  },
 
-There are scenarios in which an app can behave differently in a store, according to how it was added to the catalog, for example. It's crucial to go through these **behavioral changes** in this section, allowing users to fully understand the **practical application** of the app in their store.
+  "flex-layout.row#card-header": {
+    "props": {
+      "colSizing": "auto"
+    },
+    "children": [
+      "pickup-selector-option-card-pickup-point-distance",
+      "pickup-selector-option-card-pickup-point-name"
+    ]
+  },
 
-If you feel compelled to give further details about the app, such as it's **relationship with the VTEX admin**, don't hesitate to use this section. 
+  "flex-layout.row#card-body": {
+    "props": {
+      "colSizing": "auto"
+    },
+    "children": [
+      "flex-layout.col#card-body-address",
+      "flex-layout.col#card-body-call-to-action"
+    ]
+  },
+
+  "flex-layout.col#card-body-address": {
+    "children": [
+      "pickup-selector-option-card-pickup-point-address"
+    ]
+  },
+
+  "flex-layout.col#card-body-call-to-action": {
+    "children":[
+      "pickup-selector-option-card-pickup-point-sla",
+      "pickup-selector-option-card-add-product-button"
+    ]
+  }
+```
+
+Using the configuration above the end result would look like this:
 
 ## Customization
 
-The first thing that should be present in this section is the sentence below, showing users the recipe pertaining to CSS customization in apps:
-
-`In order to apply CSS customizations in this and other blocks, follow the instructions given in the recipe on [Using CSS Handles for store customization](https://vtex.io/docs/recipes/style/using-css-handles-for-store-customization).`
-
-Thereafter, you should add a single column table with the available CSS handles for the app, like the one below. Note that the Handles must be ordered alphabetically.
+In order to apply CSS customizations in this and other blocks, follow the instructions given in the recipe on [Using CSS Handles for store customization](https://vtex.io/docs/recipes/style/using-css-handles-for-store-customization).
 
 | CSS Handles |
 | ----------- | 
-| `XXXXX` | 
-| `XXXXX` | 
-| `XXXXX` | 
-| `XXXXX` | 
-| `XXXXX` |
-
-
-If there are none, add the following sentence instead:
-
-`No CSS Handles are available yet for the app customization.`
+| `pickupPointOptionCard` | 
+| `pickupPointAddress` | 
+| `pickupPointDistance` | 
+| `pickupPointName` | 
+| `pickupPointSla` |
+| `pickupSelectorContainer` |
+| `pickupSelectorSlaList` |
+| `searchSlaButtonContainer` |
+| `selectPickupPointButtonContainer` |
+| `zipcodeInputContainer` |
 
 <!-- DOCS-IGNORE:start -->
 
-## Contributors (
+## Contributors ✨
 
 Thanks goes to these wonderful people:
 
@@ -98,22 +162,9 @@ Thanks goes to these wonderful people:
 <!-- markdownlint-disable -->
 <!-- markdownlint-enable -->
 <!-- prettier-ignore-end -->
+
 <!-- ALL-CONTRIBUTORS-LIST:END -->
 
 This project follows the [all-contributors](https://github.com/all-contributors/all-contributors) specification. Contributions of any kind are welcome!
 
 <!-- DOCS-IGNORE:end -->
-
----- 
-
-Check out some documentation models that are already live: 
-- [Breadcrumb](https://github.com/vtex-apps/breadcrumb)
-- [Image](https://vtex.io/docs/components/general/vtex.store-components/image)
-- [Condition Layout](https://vtex.io/docs/components/all/vtex.condition-layout@1.1.6/)
-- [Add To Cart Button](https://vtex.io/docs/components/content-blocks/vtex.add-to-cart-button@0.9.0/)
-- [Store Form](https://vtex.io/docs/components/all/vtex.store-form@0.3.4/)
-
-
-**Upcoming documentation:**
-
- - [Feature/add initial blocks](https://github.com/vtex-apps/pickup-selector/pull/1)
