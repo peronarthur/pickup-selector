@@ -75,7 +75,7 @@ const SelectPickupPointButton: StorefrontFunctionComponent = () => {
 
   return (
     <div className={`${handles.selectPickupPointButtonContainer}`}>
-      <Button variation="primary" onClick={onClick} isLoading={loading}>
+      <Button variation="primary" onClick={onClick} isLoading={loading} block>
         {intl.formatMessage(selectPickupPoint.label)}
       </Button>
     </div>
@@ -83,7 +83,7 @@ const SelectPickupPointButton: StorefrontFunctionComponent = () => {
 }
 
 SelectPickupPointButton.schema = {
-  title: 'admin/editor.pickup-selector.select-pickup-point-button.title',
+  title: 'admin/editor.pickup-selector.pickup-point-button.title',
   type: 'object',
 }
 

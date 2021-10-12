@@ -8,6 +8,7 @@
   "admin/editor.pickup-selector.pickup-point-address.title": "Pickup point address",
   "admin/editor.pickup-selector.pickup-point-distance.title": "Pickup point distance",
   "admin/editor.pickup-selector.select-pickup-point-button.title": "Select pickup point button",
+  "admin/editor.pickup-selector.pickup-point-sla.title": "Pickup Point Sla",
   "pickup-selector.zipcode-input.label": "Zipcode",
   "pickup-selector.sku-selector.label": "SKU",
   "pickup-selector.search-sla-button.label": "Search",
