@@ -43,6 +43,14 @@ Now, you are able to use all the blocks exported by the pickup-selector app. Che
 | `pickup-selector-option-card-pickup-point-sla`  | Pickup point SLA |
 | `pickup-selector-option-card-add-product-button`      | Button that will add the product to cart and select the pickup point |
 
+Also, some of the blocks accepts props as describe below:
+
+### `pickup-selector-option-card-pickup-point-distance` props
+
+| Prop name    | Type            | Description    | Default value                                                                                                                               |
+| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
+| `distanceSystem`      | `string`       | This props is used to calculated the distance that the block shows, it accepts `metric` (shows distance in Km) and  `imperial` (shows distance in Mi)        | `metric`        |
+
 ### 2. Add the main block;
 
 Declare the app's main block in a given theme template or inside another block from the theme.
