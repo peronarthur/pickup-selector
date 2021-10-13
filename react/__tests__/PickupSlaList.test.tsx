@@ -56,10 +56,6 @@ describe('PickupSlaList', () => {
     ],
   }
 
-  const children = [
-    <OptionCard key="1" cardInfo={slaResponseListMock.pickupSlas[0]} />,
-  ]
-
   it('Should render the list', () => {
     const { getByTestId } = render(
       <ShippingContext.Provider
@@ -75,6 +71,7 @@ describe('PickupSlaList', () => {
   })
 
   it('Should render the correct amount of cards', () => {
+    const children = [<OptionCard key="1" index={0} />]
     const { getByTestId } = render(
       <ShippingContext.Provider
         value={{ ...contextValuesMock, ...slaResponseListMock }}
@@ -86,5 +83,20 @@ describe('PickupSlaList', () => {
     const slaList = getByTestId('card-list')
 
     expect(slaList.children).toHaveLength(2)
+  })
+
+  it('Should not render cards if the child is an invalid react element', () => {
+    const children = [null]
+    const { getByTestId } = render(
+      <ShippingContext.Provider
+        value={{ ...contextValuesMock, ...slaResponseListMock }}
+      >
+        <PickupSlaList children={children} />
+      </ShippingContext.Provider>
+    )
+
+    const slaList = getByTestId('card-list')
+
+    expect(slaList.children).toHaveLength(0)
   })
 })
