@@ -11,7 +11,10 @@ const PickupSelector: StorefrontFunctionComponent = ({ children }) => {
 
   return (
     <ShippingProvider>
-      <div className={`${handles.pickupSelectorContainer}`}>
+      <div
+        className={`${handles.pickupSelectorContainer}`}
+        data-testid="pickup-selector-container"
+      >
         {React.Children.map(children, (child) => child)}
       </div>
     </ShippingProvider>
