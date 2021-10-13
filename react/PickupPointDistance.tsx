@@ -5,7 +5,7 @@ import { useCssHandles } from 'vtex.css-handles'
 import CardContext from './context/CardContext'
 import ShippingContext from './context/shippingContext'
 import { DECIMALS, IMPERIAL_SYSTEM_MULTIPLIER } from './utils/constants'
-import { pickupPointDistance } from './utils/messages'
+import { pickupPointDistance, siteEditor } from './utils/messages'
 
 const CSS_HANDLES = ['pickupPointDistance'] as const
 
@@ -48,7 +48,7 @@ const PickupPointDistance: StorefrontFunctionComponent<PickupPointDistanceProps>
   }
 
 PickupPointDistance.schema = {
-  title: 'admin/editor.pickup-selector.pickup-point-distance.title',
+  title: siteEditor.pickupPointDistance.title.id,
   type: 'object',
 }
 

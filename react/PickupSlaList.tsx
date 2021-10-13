@@ -2,6 +2,7 @@ import React, { useContext } from 'react'
 import { useCssHandles } from 'vtex.css-handles'
 
 import ShippingContext from './context/shippingContext'
+import { siteEditor } from './utils/messages'
 
 const CSS_HANDLES = ['pickupSelectorSlaList'] as const
 
@@ -31,7 +32,7 @@ const PickupSlaList: StorefrontFunctionComponent = ({ children }) => {
 }
 
 PickupSlaList.schema = {
-  title: 'admin/editor.pickup-selector.zipcode-input.title',
+  title: siteEditor.pickupSlaList.title.id,
   type: 'object',
 }
 
