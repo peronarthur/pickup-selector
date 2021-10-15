@@ -43,9 +43,14 @@ const contextValuesMock = {
       ],
     },
   ],
+  searchedSlasStatus: {
+    loading: false,
+    called: false,
+  },
   setZipcode: () => {},
   setPickupSlas: () => {},
   setSelectedAddress: () => {},
+  setSearchedSlasStatus: () => {},
 }
 
 export default contextValuesMock
