@@ -1,6 +1,6 @@
 {
   "admin/editor.pickup-selector.title": "Pickup selector",
-  "admin/editor.pickup-selector.zipcode-input.title": "Zipcode input",
+  "admin/editor.pickup-selector.zipcode-input.title": "Zip code input",
   "admin/editor.pickup-selector.search-sla-button.title": "Search SLA button",
   "admin/editor.pickup-selector.pickup-sla-list.title": "Pickup point options list",
   "admin/editor.pickup-selector.option-card.title": "Pickup point option card",
@@ -9,9 +9,11 @@
   "admin/editor.pickup-selector.pickup-point-distance.title": "Pickup point distance",
   "admin/editor.pickup-selector.select-pickup-point-button.title": "Select pickup point button",
   "admin/editor.pickup-selector.pickup-point-sla.title": "Pickup Point Sla",
-  "pickup-selector.zipcode-input.label": "Zipcode",
+  "pickup-selector.zipcode-input.label": "Zip code",
   "pickup-selector.sku-selector.label": "SKU",
   "pickup-selector.search-sla-button.label": "Search",
   "pickup-selector.pickup-point-distance.error.label": "Unknown distance",
-  "pickup-selector.select-pickup-point-button.label": "Add to cart"
+  "pickup-selector.select-pickup-point-button.label": "Add to cart",
+  "pickup-selector.pickup-sla-list.empty-list.title": "We didn't find this product in any store near you",
+  "pickup-selector.pickup-sla-list.empty-list.body": "Select another product or change the zip code to search other stores."
 }
