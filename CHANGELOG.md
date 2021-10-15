@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 
+- Feedback when the sla list is empty after the query
+
+### Added
+
 - Tests for the pickupSelector container
 - Tests for the zipcode input
 
