@@ -4,6 +4,7 @@ import type { Address, PickupOption } from 'vtex.checkout-graphql'
 import { useProduct } from 'vtex.product-context'
 import type { Item } from 'vtex.product-context/react/ProductTypes'
 
+import type { SearchedSlasStatus } from '../typings/pickup'
 import ShippingContext from './shippingContext'
 
 const ShippingProvider: FC = (props) => {
@@ -22,6 +23,11 @@ const ShippingProvider: FC = (props) => {
   const [selectedAddress, setSelectedAddress] = useState<Address>({})
 
   const [pickupSlas, setPickupSlas] = useState<PickupOption[]>([])
+  const [searchedSlasStatus, setSearchedSlasStatus] =
+    useState<SearchedSlasStatus>({
+      loading: false,
+      called: false,
+    })
 
   useEffect(() => {
     setSelectedItem(productContext?.selectedItem ?? {})
@@ -35,9 +41,11 @@ const ShippingProvider: FC = (props) => {
         selectedQuantity,
         selectedAddress,
         pickupSlas,
+        searchedSlasStatus,
         setZipcode,
         setPickupSlas,
         setSelectedAddress,
+        setSearchedSlasStatus,
       }}
     >
       {props.children}
