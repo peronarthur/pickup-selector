@@ -25,6 +25,7 @@ const SearchSlaButton: StorefrontFunctionComponent = () => {
     selectedQuantity,
     setPickupSlas,
     setSelectedAddress,
+    setSearchedSlasStatus,
   } = useContext(ShippingContext)
 
   const isDisabled = useMemo(
@@ -32,9 +33,8 @@ const SearchSlaButton: StorefrontFunctionComponent = () => {
     [zipcode, selectedItem]
   )
 
-  const [getPickupSla, { data, loading }] = useLazyQuery<PickupSlasResponse>(
-    GET_SHIPPING_SLA,
-    {
+  const [getPickupSla, { data, loading, called }] =
+    useLazyQuery<PickupSlasResponse>(GET_SHIPPING_SLA, {
       variables: {
         items: [
           {
@@ -46,8 +46,7 @@ const SearchSlaButton: StorefrontFunctionComponent = () => {
         postalCode: zipcode,
         country: culture.country,
       },
-    }
-  )
+    })
 
   const [getAddress, addressResponse] = useLazyQuery(GET_ADDRESS, {
     variables: {
@@ -64,7 +63,16 @@ const SearchSlaButton: StorefrontFunctionComponent = () => {
   useEffect(() => {
     setPickupSlas(data?.shippingSLA.pickupOptions ?? [])
     setSelectedAddress(addressResponse.data?.getAddressFromPostalCode ?? {})
-  }, [addressResponse, data, loading, setPickupSlas, setSelectedAddress])
+    setSearchedSlasStatus({ loading, called })
+  }, [
+    addressResponse,
+    data,
+    loading,
+    called,
+    setPickupSlas,
+    setSelectedAddress,
+    setSearchedSlasStatus,
+  ])
 
   return (
     <div className={`${handles.searchSlaButtonContainer}`}>
