@@ -57,7 +57,6 @@ describe('SearchSlaButton', () => {
 
     button.onclick = onSearchClick
     fireEvent.click(button)
-
     expect(onSearchClick).toBeCalled()
   })
 })

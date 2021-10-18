@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Tests for the pickupSelector container
+- Tests for the zip code input
+
+### Changed
+
+- Improve tests
+
 ### Fixed
 
 - Fix site editor intl
@@ -36,7 +45,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [0.3.2] - 2021-10-04
 
-### Added 
+### Added
 
 - Add css handles to all components
 

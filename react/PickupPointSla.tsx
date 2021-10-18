@@ -16,12 +16,12 @@ const PickupPointSla: StorefrontFunctionComponent = () => {
   const { estimate } = pickupSlas[index]
 
   return (
-    <p
+    <div
       className={`${handles.pickupPointSla} f6 gray mw6`}
       data-testid="pickup-point-sla"
     >
       <TranslateEstimate shippingEstimate={estimate} isPickup />
-    </p>
+    </div>
   )
 }
 

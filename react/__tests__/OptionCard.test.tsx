@@ -28,10 +28,10 @@ describe('OptionCard', () => {
     ],
   }
 
-  const children = [<PickupPointName key="1" name={cardInfo.friendlyName} />]
   const index = 0
 
   it('Should show the card', () => {
+    const children = [<PickupPointName key="1" name={cardInfo.friendlyName} />]
     const { container } = render(
       <OptionCard children={children} index={index} />
     )
@@ -40,6 +40,8 @@ describe('OptionCard', () => {
   })
 
   it('Should render children props', () => {
+    const children = [<PickupPointName key="1" name={cardInfo.friendlyName} />]
+
     const { getByTestId } = render(
       <OptionCard children={children} index={index} />
     )
@@ -47,5 +49,17 @@ describe('OptionCard', () => {
     const card = getByTestId('card')
 
     expect(card.children).toHaveLength(1)
+  })
+
+  it('Should not render child content if invalid react element', () => {
+    const children = [null]
+
+    const { getByTestId } = render(
+      <OptionCard children={children} index={index} />
+    )
+
+    const card = getByTestId('card')
+
+    expect(card.firstChild?.hasChildNodes()).toBeFalsy()
   })
 })
