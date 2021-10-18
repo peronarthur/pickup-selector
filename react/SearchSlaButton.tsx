@@ -6,7 +6,7 @@ import { useRuntime } from 'vtex.render-runtime'
 import { useCssHandles } from 'vtex.css-handles'
 
 import ShippingContext from './context/shippingContext'
-import { searchSlaButton } from './utils/messages'
+import { searchSlaButton, siteEditor } from './utils/messages'
 import GET_SHIPPING_SLA from './graphql/queries/getPickupSla.gql'
 import GET_ADDRESS from './graphql/queries/getAddress.gql'
 import { DEFAULT_SELLER } from './utils/constants'
@@ -82,7 +82,7 @@ const SearchSlaButton: StorefrontFunctionComponent = () => {
 }
 
 SearchSlaButton.schema = {
-  title: 'admin/editor.pickup-selector.search-sla-button.title',
+  title: siteEditor.searchSlaButton.title.id,
   type: 'object',
 }
 

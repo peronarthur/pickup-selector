@@ -3,6 +3,7 @@ import { useCssHandles } from 'vtex.css-handles'
 
 import CardContext from './context/CardContext'
 import ShippingContext from './context/shippingContext'
+import { siteEditor } from './utils/messages'
 
 const CSS_HANDLES = ['pickupPointAddress'] as const
 
@@ -30,7 +31,7 @@ const PickupPointAddress: StorefrontFunctionComponent = () => {
 }
 
 PickupPointAddress.schema = {
-  title: 'admin/editor.pickup-selector.pickup-point-address.title',
+  title: siteEditor.pickupPointAddress.title.id,
   type: 'object',
 }
 

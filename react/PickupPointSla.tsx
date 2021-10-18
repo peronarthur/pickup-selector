@@ -4,6 +4,7 @@ import TranslateEstimate from 'vtex.shipping-estimate-translator/TranslateEstima
 
 import CardContext from './context/CardContext'
 import ShippingContext from './context/shippingContext'
+import { siteEditor } from './utils/messages'
 
 const CSS_HANDLES = ['pickupPointSla'] as const
 
@@ -25,7 +26,7 @@ const PickupPointSla: StorefrontFunctionComponent = () => {
 }
 
 PickupPointSla.schema = {
-  title: 'admin/editor.pickup-selector.pickup-point-sla.title',
+  title: siteEditor.pickupPointSla.title.id,
   type: 'object',
 }
 

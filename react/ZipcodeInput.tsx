@@ -4,7 +4,7 @@ import { useIntl } from 'react-intl'
 import { useCssHandles } from 'vtex.css-handles'
 
 import ShippingContext from './context/shippingContext'
-import { zipcodeInput } from './utils/messages'
+import { siteEditor, zipcodeInput } from './utils/messages'
 
 const CSS_HANDLES = ['zipcodeInputContainer'] as const
 
@@ -39,7 +39,7 @@ const ZipcodeInput: StorefrontFunctionComponent = () => {
 }
 
 ZipcodeInput.schema = {
-  title: 'admin/editor.pickup-selector.zipcode-input.title',
+  title: siteEditor.zipcodeInput.title.id,
   type: 'object',
 }
 

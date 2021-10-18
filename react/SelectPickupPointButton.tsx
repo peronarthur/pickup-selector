@@ -7,7 +7,7 @@ import type { Item } from 'vtex.product-context/react/ProductTypes'
 import { useCssHandles } from 'vtex.css-handles'
 
 import ShippingContext from './context/shippingContext'
-import { selectPickupPoint } from './utils/messages'
+import { selectPickupPoint, siteEditor } from './utils/messages'
 import ADD_TO_CART from './graphql/queries/addToCart.gql'
 import SET_SELECTED_ADDRESS from './graphql/queries/setSelectedAddress.gql'
 import SELECT_PICKUP_OPTION from './graphql/queries/selectPickupOption.gql'
@@ -83,7 +83,7 @@ const SelectPickupPointButton: StorefrontFunctionComponent = () => {
 }
 
 SelectPickupPointButton.schema = {
-  title: 'admin/editor.pickup-selector.pickup-point-button.title',
+  title: siteEditor.selectPickupPointButton.title.id,
   type: 'object',
 }
 

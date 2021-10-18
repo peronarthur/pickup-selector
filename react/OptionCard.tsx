@@ -3,6 +3,7 @@ import { Card } from 'vtex.styleguide'
 import { useCssHandles } from 'vtex.css-handles'
 
 import CardContext from './context/CardContext'
+import { siteEditor } from './utils/messages'
 
 const CSS_HANDLES = ['pickupPointOptionCard'] as const
 
@@ -37,7 +38,7 @@ const OptionCard: StorefrontFunctionComponent<CardProps> = ({
 }
 
 OptionCard.schema = {
-  title: 'admin/editor.pickup-selector.option-card.title',
+  title: siteEditor.optionCard.title.id,
   type: 'object',
 }
 

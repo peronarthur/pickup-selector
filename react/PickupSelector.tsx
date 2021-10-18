@@ -2,6 +2,7 @@ import React from 'react'
 import { useCssHandles } from 'vtex.css-handles'
 
 import ShippingProvider from './context/shippingProvider'
+import { siteEditor } from './utils/messages'
 
 const CSS_HANDLES = ['pickupSelectorContainer'] as const
 
@@ -18,7 +19,7 @@ const PickupSelector: StorefrontFunctionComponent = ({ children }) => {
 }
 
 PickupSelector.schema = {
-  title: 'admin/editor.pickup-selector.title',
+  title: siteEditor.pickupSelector.title.id,
   type: 'object',
 }
 
