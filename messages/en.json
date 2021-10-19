@@ -14,6 +14,8 @@
   "pickup-selector.search-sla-button.label": "Search",
   "pickup-selector.pickup-point-distance.error.label": "Unknown distance",
   "pickup-selector.select-pickup-point-button.label": "Add to cart",
+  "pickup-selector.select-pickup-point-button.success": "Item added to your cart",
+  "pickup-selector.select-pickup-point-button.error": "Something went wrong and the item was not added to your cart!",
   "pickup-selector.pickup-sla-list.empty-list.title": "We didn't find this product in any store near you",
   "pickup-selector.pickup-sla-list.empty-list.body": "Select another product or change the zip code to search other stores."
 }

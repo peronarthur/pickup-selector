@@ -51,6 +51,8 @@ export const pickupPointDistance = defineMessages({
 
 export const selectPickupPoint = defineMessages({
   label: { id: 'pickup-selector.select-pickup-point-button.label' },
+  success: { id: 'pickup-selector.select-pickup-point-button.success' },
+  error: { id: 'pickup-selector.select-pickup-point-button.error' },
 })
 
 export const pickupSlaList = defineMessages({
