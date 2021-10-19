@@ -52,3 +52,12 @@ export const pickupPointDistance = defineMessages({
 export const selectPickupPoint = defineMessages({
   label: { id: 'pickup-selector.select-pickup-point-button.label' },
 })
+
+export const pickupSlaList = defineMessages({
+  emptyTitle: {
+    id: 'pickup-selector.pickup-sla-list.empty-list.title',
+  },
+  emptyBody: {
+    id: 'pickup-selector.pickup-sla-list.empty-list.body',
+  },
+})

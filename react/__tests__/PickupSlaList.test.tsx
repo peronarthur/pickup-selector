@@ -1,6 +1,7 @@
 /* eslint-disable react/no-children-prop */
 import React from 'react'
 import { render } from '@vtex/test-tools/react'
+import type { PickupOption } from 'vtex.checkout-graphql'
 
 import PickupSlaList from '../PickupSlaList'
 import ShippingContext from '../context/shippingContext'
@@ -98,5 +99,23 @@ describe('PickupSlaList', () => {
     const slaList = getByTestId('card-list')
 
     expect(slaList.children).toHaveLength(0)
+  })
+
+  it('Should render the empty state component if sla list comes back empty', () => {
+    const children = [<OptionCard key="1" index={0} />]
+    const pickupSlas: PickupOption[] = []
+    const searchedSlasStatus = { loading: false, called: true }
+    const title = "We didn't find this product in any store near you"
+    const { getByTestId } = render(
+      <ShippingContext.Provider
+        value={{ ...contextValuesMock, searchedSlasStatus, pickupSlas }}
+      >
+        <PickupSlaList children={children} />
+      </ShippingContext.Provider>
+    )
+
+    const emptyState = getByTestId('empty-state-title')
+
+    expect(emptyState).toHaveTextContent(title)
   })
 })

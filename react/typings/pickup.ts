@@ -7,3 +7,8 @@ type ShippingSLA = {
 export interface PickupSlasResponse {
   shippingSLA: ShippingSLA
 }
+
+export type SearchedSlasStatus = {
+  loading: boolean
+  called: boolean
+}

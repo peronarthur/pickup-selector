@@ -13,5 +13,7 @@
   "pickup-selector.sku-selector.label": "SKU",
   "pickup-selector.search-sla-button.label": "Buscar",
   "pickup-selector.pickup-point-distance.error.label": "Distancia desconocida",
-  "pickup-selector.select-pickup-point-button.label": "Agregar"
+  "pickup-selector.select-pickup-point-button.label": "Agregar",
+  "pickup-selector.pickup-sla-list.empty-list.title": "No hemos encontrado este producto en ninguna tienda cercana",
+  "pickup-selector.pickup-sla-list.empty-list.body": "Seleccione otro producto o cambie el código postal para buscar otras tiendas."
 }

@@ -1,6 +1,7 @@
-import React, { useContext } from 'react'
+import React, { useContext, useMemo } from 'react'
 import { useCssHandles } from 'vtex.css-handles'
 
+import EmptyList from './components/searchSlaButton/EmptyList'
 import ShippingContext from './context/shippingContext'
 import { siteEditor } from './utils/messages'
 
@@ -8,7 +9,15 @@ const CSS_HANDLES = ['pickupSelectorSlaList'] as const
 
 const PickupSlaList: StorefrontFunctionComponent = ({ children }) => {
   const { handles } = useCssHandles(CSS_HANDLES)
-  const { pickupSlas } = useContext(ShippingContext)
+  const { pickupSlas, searchedSlasStatus } = useContext(ShippingContext)
+
+  const showEmptyState = useMemo(
+    () =>
+      searchedSlasStatus.called &&
+      pickupSlas.length === 0 &&
+      !searchedSlasStatus.loading,
+    [searchedSlasStatus, pickupSlas]
+  )
 
   return (
     <div
@@ -27,6 +36,7 @@ const PickupSlaList: StorefrontFunctionComponent = ({ children }) => {
           return null
         })
       })}
+      {showEmptyState ? <EmptyList /> : null}
     </div>
   )
 }
