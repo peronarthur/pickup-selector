@@ -1,7 +1,7 @@
 {
   "vendor": "vtex",
   "name": "pickup-selector",
-  "version": "0.6.0",
+  "version": "0.7.0",
   "title": "Pickup selector",
   "description": "CHANGE_ME",
   "builders": {
@@ -19,9 +19,7 @@
     "vtex.order-manager": "0.x",
     "vtex.shipping-estimate-translator": "2.x"
   },
-  "registries": [
-    "smartcheckout"
-  ],
+  "registries": ["smartcheckout"],
   "policies": [],
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
