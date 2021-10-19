@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+## [0.7.0] - 2021-10-19
+
 ### Added
 
 - Feedback when the sla list is empty after the query
@@ -14,7 +16,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 ### Added
 
 - Tests for the pickupSelector container
-- Tests for the zipcode input
+- Tests for the zip code input
 
 ### Changed
 
