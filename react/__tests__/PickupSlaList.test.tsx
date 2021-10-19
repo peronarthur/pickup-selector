@@ -105,7 +105,6 @@ describe('PickupSlaList', () => {
     const children = [<OptionCard key="1" index={0} />]
     const pickupSlas: PickupOption[] = []
     const searchedSlasStatus = { loading: false, called: true }
-    const title = "We didn't find this product in any store near you"
     const { getByTestId } = render(
       <ShippingContext.Provider
         value={{ ...contextValuesMock, searchedSlasStatus, pickupSlas }}
@@ -116,6 +115,6 @@ describe('PickupSlaList', () => {
 
     const emptyState = getByTestId('empty-state-title')
 
-    expect(emptyState).toHaveTextContent(title)
+    expect(emptyState).toBeInTheDocument()
   })
 })
