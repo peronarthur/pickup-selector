@@ -12,6 +12,12 @@ import SET_SELECTED_ADDRESS from '../graphql/queries/setSelectedAddress.gql'
 import SELECT_PICKUP_OPTION from '../graphql/queries/selectPickupOption.gql'
 import { orderFormResponse } from '../__mocks__/orderFormResponse'
 
+const mockPush = jest.fn()
+
+jest.mock('vtex.pixel-manager', () => ({
+  usePixel: () => ({ push: mockPush }),
+}))
+
 describe('SelectPickupPointButton', () => {
   const index = 0
   const addToCartMock = {
@@ -141,7 +147,7 @@ describe('SelectPickupPointButton', () => {
     const { container } = render(
       <ShippingContext.Provider value={ProviderValues}>
         <CardContext.Provider value={{ index }}>
-          <SelectPickupPointButton />
+          <SelectPickupPointButton showToastFeedback />
         </CardContext.Provider>
       </ShippingContext.Provider>,
       {
@@ -165,6 +171,7 @@ describe('SelectPickupPointButton', () => {
     jest.runAllTimers()
 
     expect(onClick).toBeCalled()
+    expect(mockPush).not.toBeCalled()
   })
 
   it.todo('Should check orderForm')

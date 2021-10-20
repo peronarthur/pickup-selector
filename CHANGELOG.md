@@ -7,13 +7,17 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-## [0.8.0] - 2021-10-19
+### Changed
 
-## [0.7.0] - 2021-10-19
+- Improve UX for the add to cart action
+
+## [0.8.0] - 2021-10-19
 
 ### Added
 
 - Feedback when the sla list is empty after the query
+
+## [0.7.0] - 2021-10-19
 
 ### Added
 

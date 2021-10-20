@@ -4,7 +4,9 @@
 
 <!-- DOCS-IGNORE:start -->
 <!-- ALL-CONTRIBUTORS-BADGE:START - Do not remove or modify this section -->
+
 [![All Contributors](https://img.shields.io/badge/all_contributors-0-orange.svg?style=flat-square)](#contributors-)
+
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- DOCS-IGNORE:end -->
 
@@ -14,7 +16,6 @@ The pickup point selector app adds a block where the client can add a product to
 
 > 🚨 Warning: This app should only be used inside the product page, since one of its dependencies is the product-context
 
-
 ![Media Placeholder](https://user-images.githubusercontent.com/52087100/71204177-42ca4f80-227e-11ea-89e6-e92e65370c69.png)
 
 ## Configuration
@@ -22,6 +23,7 @@ The pickup point selector app adds a block where the client can add a product to
 You can follow the steps to configure the app on your store theme
 
 ### 1. Add the app as a theme dependency in the `manifest.json` file;
+
 ```json
   "dependencies": {
     "vtex.pickup-selector": "0.x"
@@ -30,26 +32,33 @@ You can follow the steps to configure the app on your store theme
 
 Now, you are able to use all the blocks exported by the pickup-selector app. Check out the full list below:
 
-| Block name                 | Description                     |
-| -------------------------- | ------------------------------- |
-| `pickup-selector`          | Main block |
-| `pickup-selector-zipcode-input`  | Shows the zipcode input |
-| `pickup-selector-search-sla-button` | Button used to search the pickup SLA options based on the zipcode inputed and the selected SKU |
-| `pickup-selector-sla-list`         | List that shows the card with the pickup options avaiable |
-| `pickup-selector-option-card`         | Card with the pickup option information   |
-| `pickup-selector-option-card-pickup-point-name`      | Pickup point name |
-| `pickup-selector-option-card-pickup-point-address`      | Pickup point address |
-| `pickup-selector-option-card-pickup-point-distance`      | Pickup point distance(in Km) |
-| `pickup-selector-option-card-pickup-point-sla`  | Pickup point SLA |
-| `pickup-selector-option-card-add-product-button`      | Button that will add the product to cart and select the pickup point |
+| Block name                                          | Description                                                                                    |
+| --------------------------------------------------- | ---------------------------------------------------------------------------------------------- |
+| `pickup-selector`                                   | Main block                                                                                     |
+| `pickup-selector-zipcode-input`                     | Shows the zipcode input                                                                        |
+| `pickup-selector-search-sla-button`                 | Button used to search the pickup SLA options based on the zipcode inputed and the selected SKU |
+| `pickup-selector-sla-list`                          | List that shows the card with the pickup options avaiable                                      |
+| `pickup-selector-option-card`                       | Card with the pickup option information                                                        |
+| `pickup-selector-option-card-pickup-point-name`     | Pickup point name                                                                              |
+| `pickup-selector-option-card-pickup-point-address`  | Pickup point address                                                                           |
+| `pickup-selector-option-card-pickup-point-distance` | Pickup point distance(in Km)                                                                   |
+| `pickup-selector-option-card-pickup-point-sla`      | Pickup point SLA                                                                               |
+| `pickup-selector-option-card-add-product-button`    | Button that will add the product to cart and select the pickup point                           |
 
 Also, some of the blocks accepts props as describe below:
 
 ### `pickup-selector-option-card-pickup-point-distance` props
 
-| Prop name    | Type            | Description    | Default value                                                                                                                               |
-| ------------ | --------------- | --------------------------------------------------------------------------------------------------------------------------------------------- | ---------- | 
-| `distanceSystem`      | `string`       | This props is used to calculated the distance that the block shows, it accepts `metric` (shows distance in Km) and  `imperial` (shows distance in Mi)        | `metric`        |
+| Prop name        | Type     | Description                                                                                                                                          | Default value |
+| ---------------- | -------- | ---------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| `distanceSystem` | `string` | This props is used to calculated the distance that the block shows, it accepts `metric` (shows distance in Km) and `imperial` (shows distance in Mi) | `metric`      |
+
+### `pickup-selector-option-card-add-product-button` props
+
+| Prop name            | Type      | Description                                                                                                                                                                                                                                                                                       | Default value |
+| -------------------- | --------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------- |
+| `customPixelEventId` | `string`  | **Should only be used with [minicart.v2](https://github.com/vtex-apps/minicart)**. Define the id for the event that will be sent by the the button upon user interaction. Should be the same id configured on minicart.v2 so that the drawer opens on successfully adding the product to the cart | `undefined`   |
+| `showToastFeedback`  | `boolean` | This props is a fallback to give support for minicart.v1. This will show a toast with feedback on successfully adding the product to the cart                                                                                                                                                     | `false`       |
 
 ### 2. Add the main block;
 
@@ -81,7 +90,7 @@ The only block that should be used inside this one is the `pickup-selector-optio
 
 ### 4. Configuring the `pickup-selector-option-card`
 
-You are free to style this block as you want. 
+You are free to style this block as you want.
 We have some blocks in the app that will help with the information about the pickup point. They are the following:
 
 - `pickup-selector-option-card-pickup-point-name`
@@ -150,18 +159,18 @@ Using the configuration above the end result would look like this:
 
 In order to apply CSS customizations in this and other blocks, follow the instructions given in the recipe on [Using CSS Handles for store customization](https://vtex.io/docs/recipes/style/using-css-handles-for-store-customization).
 
-| CSS Handles |
-| ----------- | 
-| `pickupPointOptionCard` | 
-| `pickupPointAddress` | 
-| `pickupPointDistance` | 
-| `pickupPointName` | 
-| `pickupPointSla` |
-| `pickupSelectorContainer` |
-| `pickupSelectorSlaList` |
-| `searchSlaButtonContainer` |
+| CSS Handles                        |
+| ---------------------------------- |
+| `pickupPointOptionCard`            |
+| `pickupPointAddress`               |
+| `pickupPointDistance`              |
+| `pickupPointName`                  |
+| `pickupPointSla`                   |
+| `pickupSelectorContainer`          |
+| `pickupSelectorSlaList`            |
+| `searchSlaButtonContainer`         |
 | `selectPickupPointButtonContainer` |
-| `zipcodeInputContainer` |
+| `zipcodeInputContainer`            |
 
 <!-- DOCS-IGNORE:start -->
 
