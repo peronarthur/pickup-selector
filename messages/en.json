@@ -9,13 +9,13 @@
   "admin/editor.pickup-selector.pickup-point-distance.title": "Pickup point distance",
   "admin/editor.pickup-selector.select-pickup-point-button.title": "Select pickup point button",
   "admin/editor.pickup-selector.pickup-point-sla.title": "Pickup Point Sla",
-  "pickup-selector.zipcode-input.label": "Zip code",
-  "pickup-selector.sku-selector.label": "SKU",
-  "pickup-selector.search-sla-button.label": "Search",
-  "pickup-selector.pickup-point-distance.error.label": "Unknown distance",
-  "pickup-selector.select-pickup-point-button.label": "Add to cart",
-  "pickup-selector.select-pickup-point-button.success": "Item added to your cart",
-  "pickup-selector.select-pickup-point-button.error": "Something went wrong and the item was not added to your cart!",
-  "pickup-selector.pickup-sla-list.empty-list.title": "We didn't find this product in any store near you",
-  "pickup-selector.pickup-sla-list.empty-list.body": "Select another product or change the zip code to search other stores."
+  "store/pickup-selector.zipcode-input.label": "Zip code",
+  "store/pickup-selector.sku-selector.label": "SKU",
+  "store/pickup-selector.search-sla-button.label": "Search",
+  "store/pickup-selector.pickup-point-distance.error.label": "Unknown distance",
+  "store/pickup-selector.select-pickup-point-button.label": "Add to cart",
+  "store/pickup-selector.select-pickup-point-button.success": "Item added to your cart",
+  "store/pickup-selector.select-pickup-point-button.error": "Something went wrong and the item was not added to your cart!",
+  "store/pickup-selector.pickup-sla-list.empty-list.title": "We didn't find this product in any store near you",
+  "store/pickup-selector.pickup-sla-list.empty-list.body": "Select another product or change the zip code to search other stores."
 }
