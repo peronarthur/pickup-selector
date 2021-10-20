@@ -34,32 +34,32 @@ export const siteEditor = defineMessages({
 })
 
 export const zipcodeInput = defineMessages({
-  label: { id: 'pickup-selector.zipcode-input.label' },
+  label: { id: 'store/pickup-selector.zipcode-input.label' },
 })
 
 export const skuSelector = defineMessages({
-  label: { id: 'pickup-selector.sku-selector.label' },
+  label: { id: 'store/pickup-selector.sku-selector.label' },
 })
 
 export const searchSlaButton = defineMessages({
-  label: { id: 'pickup-selector.search-sla-button.label' },
+  label: { id: 'store/pickup-selector.search-sla-button.label' },
 })
 
 export const pickupPointDistance = defineMessages({
-  label: { id: 'pickup-selector.pickup-point-distance.error.label' },
+  label: { id: 'store/pickup-selector.pickup-point-distance.error.label' },
 })
 
 export const selectPickupPoint = defineMessages({
-  label: { id: 'pickup-selector.select-pickup-point-button.label' },
-  success: { id: 'pickup-selector.select-pickup-point-button.success' },
-  error: { id: 'pickup-selector.select-pickup-point-button.error' },
+  label: { id: 'store/pickup-selector.select-pickup-point-button.label' },
+  success: { id: 'store/pickup-selector.select-pickup-point-button.success' },
+  error: { id: 'store/pickup-selector.select-pickup-point-button.error' },
 })
 
 export const pickupSlaList = defineMessages({
   emptyTitle: {
-    id: 'pickup-selector.pickup-sla-list.empty-list.title',
+    id: 'store/pickup-selector.pickup-sla-list.empty-list.title',
   },
   emptyBody: {
-    id: 'pickup-selector.pickup-sla-list.empty-list.body',
+    id: 'store/pickup-selector.pickup-sla-list.empty-list.body',
   },
 })

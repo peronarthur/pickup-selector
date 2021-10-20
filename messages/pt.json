@@ -9,13 +9,13 @@
   "admin/editor.pickup-selector.pickup-point-distance.title": "Distância do ponto de retirada",
   "admin/editor.pickup-selector.select-pickup-point-button.title": "Botão de selecionar o ponto de retirada",
   "admin/editor.pickup-selector.pickup-point-sla.title": "Sla do ponto de retirada",
-  "pickup-selector.zipcode-input.label": "CEP",
-  "pickup-selector.sku-selector.label": "SKU",
-  "pickup-selector.search-sla-button.label": "Buscar",
-  "pickup-selector.pickup-point-distance.error.label": "Distância desconhecida",
-  "pickup-selector.select-pickup-point-button.label": "Adicionar ao carrinho",
-  "pickup-selector.select-pickup-point-button.success": "Item adicionado ao carrinho",
-  "pickup-selector.select-pickup-point-button.error": "Algo deu errado e o item não pôde ser adicionado ao seu carrinho!",
-  "pickup-selector.pickup-sla-list.empty-list.title": "Não encontramos este produto em nenhuma loja perto de você",
-  "pickup-selector.pickup-sla-list.empty-list.body": "Selecione outro produto ou altere o CEP para buscar em outras lojas."
+  "store/pickup-selector.zipcode-input.label": "CEP",
+  "store/pickup-selector.sku-selector.label": "SKU",
+  "store/pickup-selector.search-sla-button.label": "Buscar",
+  "store/pickup-selector.pickup-point-distance.error.label": "Distância desconhecida",
+  "store/pickup-selector.select-pickup-point-button.label": "Adicionar ao carrinho",
+  "store/pickup-selector.select-pickup-point-button.success": "Item adicionado ao carrinho",
+  "store/pickup-selector.select-pickup-point-button.error": "Algo deu errado e o item não pôde ser adicionado ao seu carrinho!",
+  "store/pickup-selector.pickup-sla-list.empty-list.title": "Não encontramos este produto em nenhuma loja perto de você",
+  "store/pickup-selector.pickup-sla-list.empty-list.body": "Selecione outro produto ou altere o CEP para buscar em outras lojas."
 }
