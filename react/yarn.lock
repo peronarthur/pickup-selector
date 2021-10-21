@@ -6012,9 +6012,9 @@ vtex-tachyons@^3.2.0:
   version "0.11.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.11.1/public/@types/vtex.order-manager#cc658148c5e054900c0d692a26d1ac7c872d9262"
 
-"vtex.pickup-selector@https://pickupselector--gabrielhosinoio.myvtex.com/_v/private/typings/linked/v1/vtex.pickup-selector@0.8.0+build1634652782/public/@types/vtex.pickup-selector":
-  version "0.8.0"
-  resolved "https://pickupselector--gabrielhosinoio.myvtex.com/_v/private/typings/linked/v1/vtex.pickup-selector@0.8.0+build1634652782/public/@types/vtex.pickup-selector#91c285d12097d3e4f83ed8a53f59775aaa1699f3"
+"vtex.pickup-selector@https://pickupselector--gabrielhosinoio.myvtex.com/_v/private/typings/linked/v1/vtex.pickup-selector@0.9.1+build1634818475/public/@types/vtex.pickup-selector":
+  version "0.9.1"
+  resolved "https://pickupselector--gabrielhosinoio.myvtex.com/_v/private/typings/linked/v1/vtex.pickup-selector@0.9.1+build1634818475/public/@types/vtex.pickup-selector#dae45df02bf8b6260698ddc65bf0b6ab2dfe28a2"
 
 "vtex.pixel-manager@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.pixel-manager@1.8.0/public/@types/vtex.pixel-manager":
   version "1.8.0"
