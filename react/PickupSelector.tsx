@@ -4,6 +4,7 @@ import { ToastProvider } from 'vtex.styleguide'
 
 import ShippingProvider from './context/shippingProvider'
 import { siteEditor } from './utils/messages'
+import './styles.global.css'
 
 const CSS_HANDLES = ['pickupSelectorContainer'] as const
 

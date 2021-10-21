@@ -21,7 +21,7 @@ const PickupSlaList: StorefrontFunctionComponent = ({ children }) => {
 
   return (
     <div
-      className={`${handles.pickupSelectorSlaList} mt4 mb4`}
+      className={`${handles.pickupSelectorSlaList} max-h1 mt4 mb4 pa2 overflow-y-auto`}
       data-testid="card-list"
     >
       {pickupSlas.map((option, index) => {

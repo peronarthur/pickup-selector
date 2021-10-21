@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Added
+
+- Global styles
+- Scroll to the sla list block
+
+### Fixed
+
+- Css handles for the option card block is now correct
+
 ## [0.9.1] - 2021-10-20
 
 ### Fixed
