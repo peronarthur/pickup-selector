@@ -20,7 +20,7 @@ const OptionCard: StorefrontFunctionComponent<CardProps> = ({
   return (
     <CardContext.Provider value={{ index }}>
       <div
-        className={`${handles.pickupSelectorContainer} mb4`}
+        className={`${handles.pickupPointOptionCard} mb4`}
         data-testid="card"
       >
         <Card>
