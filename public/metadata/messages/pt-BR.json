@@ -1,6 +1,6 @@
 {
   "name": "Seletor de ponto de retirada",
-  "headline": "Permite que os clientes selecionem um ponto de retirada dentro do PDP.",
+  "headline": "Permite que os clientes selecionem um ponto de retirada dentro da PDP.",
   "overview": "O aplicativo permite que o cliente pesquise as lojas próximas ao CEP selecionado diretamente no PDP, além de melhorar a experiência de compra permitindo adicionar um item ao carrinho com o ponto de retirada selecionado com apenas um clique.",
   "features": [
     "Adiciona uma lista dos pontos de coleta mais próximos com estoque do produto selecionado",
