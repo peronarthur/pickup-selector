@@ -10,7 +10,6 @@
   "admin/editor.pickup-selector.select-pickup-point-button.title": "Botão de selecionar o ponto de retirada",
   "admin/editor.pickup-selector.pickup-point-sla.title": "Sla do ponto de retirada",
   "store/pickup-selector.zipcode-input.label": "CEP",
-  "store/pickup-selector.sku-selector.label": "SKU",
   "store/pickup-selector.search-sla-button.label": "Buscar",
   "store/pickup-selector.pickup-point-distance.error.label": "Distância desconhecida",
   "store/pickup-selector.select-pickup-point-button.label": "Adicionar ao carrinho",

@@ -37,10 +37,6 @@ export const zipcodeInput = defineMessages({
   label: { id: 'store/pickup-selector.zipcode-input.label' },
 })
 
-export const skuSelector = defineMessages({
-  label: { id: 'store/pickup-selector.sku-selector.label' },
-})
-
 export const searchSlaButton = defineMessages({
   label: { id: 'store/pickup-selector.search-sla-button.label' },
 })

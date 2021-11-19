@@ -1,0 +1,20 @@
+{
+  "admin/editor.pickup-selector.title": "Kiezer voor afhaalpunt",
+  "admin/editor.pickup-selector.zipcode-input.title": "Postcode",
+  "admin/editor.pickup-selector.search-sla-button.title": "SLA-zoekknop",
+  "admin/editor.pickup-selector.pickup-sla-list.title": "Lijst van opties voor afhaalpunten",
+  "admin/editor.pickup-selector.option-card.title": "Afhaalpunt optiekaart",
+  "admin/editor.pickup-selector.pickup-point-name.title": "Naam van afhaalpunt",
+  "admin/editor.pickup-selector.pickup-point-address.title": "Adres van afhaalpunt",
+  "admin/editor.pickup-selector.pickup-point-distance.title": "Afstand van afhaalpunt",
+  "admin/editor.pickup-selector.select-pickup-point-button.title": "Selectieknop van afhaalpunt",
+  "admin/editor.pickup-selector.pickup-point-sla.title": "SLA afhaalpunt",
+  "store/pickup-selector.zipcode-input.label": "Postcode",
+  "store/pickup-selector.search-sla-button.label": "Zoek",
+  "store/pickup-selector.pickup-point-distance.error.label": "Onbekende afstand",
+  "store/pickup-selector.select-pickup-point-button.label": "Toevoegen aan winkelwagen",
+  "store/pickup-selector.select-pickup-point-button.success": "Item toegevoegd aan uw winkelwagen",
+  "store/pickup-selector.select-pickup-point-button.error": "Er is iets misgegaan en het item is niet toegevoegd aan uw winkelwagen!",
+  "store/pickup-selector.pickup-sla-list.empty-list.title": "Wij konden dit product in geen enkele winkel in uw buurt vinden",
+  "store/pickup-selector.pickup-sla-list.empty-list.body": "Kies een ander product of verander de postcode om in andere winkels te zoeken"
+}
