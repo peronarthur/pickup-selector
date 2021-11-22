@@ -1,0 +1,20 @@
+{
+  "admin/editor.pickup-selector.title": "픽업 지점 선택기",
+  "admin/editor.pickup-selector.zipcode-input.title": "우편번호",
+  "admin/editor.pickup-selector.search-sla-button.title": "SLA 검색 버튼",
+  "admin/editor.pickup-selector.pickup-sla-list.title": "픽업 지점 옵션 목록",
+  "admin/editor.pickup-selector.option-card.title": "픽업 지점 옵션 카드",
+  "admin/editor.pickup-selector.pickup-point-name.title": "픽업 지점 이름",
+  "admin/editor.pickup-selector.pickup-point-address.title": "픽업 지점 주소",
+  "admin/editor.pickup-selector.pickup-point-distance.title": "픽업 지점 거리",
+  "admin/editor.pickup-selector.select-pickup-point-button.title": "픽업 지점 선택 버튼",
+  "admin/editor.pickup-selector.pickup-point-sla.title": "픽업 지점 Sla",
+  "store/pickup-selector.zipcode-input.label": "우편번호",
+  "store/pickup-selector.search-sla-button.label": "검색",
+  "store/pickup-selector.pickup-point-distance.error.label": "알 수 없는 거리",
+  "store/pickup-selector.select-pickup-point-button.label": "장바구니에 담기",
+  "store/pickup-selector.select-pickup-point-button.success": "장바구니에 추가된 항목",
+  "store/pickup-selector.select-pickup-point-button.error": "문제가 발생하여 항목을 장바구니에 추가할 수 없습니다!",
+  "store/pickup-selector.pickup-sla-list.empty-list.title": "가까운 매장에서 이 제품을 찾을 수 없습니다.",
+  "store/pickup-selector.pickup-sla-list.empty-list.body": "다른 제품을 선택하거나 우편 번호를 변경하여 다른 스토어를 검색하세요."
+}

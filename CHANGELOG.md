@@ -7,9 +7,20 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
-### Added
+### Changed
 
 - Billing options
+
+### Added
+
+- App icon
+- App metadata images
+
+## [0.11.0] - 2021-11-19
+
+### Added
+
+- Missing translations
 
 ## [0.10.0] - 2021-10-25
 

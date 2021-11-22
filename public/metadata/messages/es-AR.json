@@ -1,10 +1,10 @@
 {
-  "name": "Selector de punto de retiro",
-  "headline": "Permite a los clientes seleccionar un punto de recogida dentro del PDP.",
-  "overview": "La aplicación permite al cliente buscar las tiendas cercanas al código postal seleccionado directamente en el PDP, además de mejorar la experiencia de compra al permitir agregar un artículo al carrito con el punto de recogida seleccionado con solo un clic.",
+  "name": "Selector de puntos de recogida",
+  "headline": "Permite a los clientes seleccionar un punto de recogida en la página de producto (PDP).",
+  "overview": "La aplicación permite al cliente buscar tiendas cerca del código postal en la página de producto (PDP) y mejora la experiencia de compra al agregar un ítem al carrito con el punto de recogida seleccionado con un solo clic.",
   "features": [
-    "Agrega una lista de los puntos de recolección más cercanos con stock para el producto seleccionado",
-    "Agrega un botón de compra que también seleccione el punto de retiro con un clic"
+    "Agrega una lista de los puntos de recogida más cercanos que tienen el producto seleccionado en stock",
+    "Agrega un botón de compra que también selecciona el punto de recogida con un solo clic"
   ],
   "websiteURL": "https://vtex.com/",
   "support": {
