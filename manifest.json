@@ -20,9 +20,14 @@
     "vtex.shipping-estimate-translator": "2.x",
     "vtex.pixel-manager": "1.x"
   },
-  "registries": [
-    "smartcheckout"
-  ],
+  "registries": ["smartcheckout"],
   "policies": [],
+  "billingOptions": {
+    "type": "free",
+    "support": {
+      "url": "https://support.vtex.com/hc/requests"
+    },
+    "availableCountries": ["*"]
+  },
   "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
 }
