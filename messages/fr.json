@@ -1,0 +1,20 @@
+{
+  "admin/editor.pickup-selector.title": "Sélecteur de point relais",
+  "admin/editor.pickup-selector.zipcode-input.title": "Code postal",
+  "admin/editor.pickup-selector.search-sla-button.title": "Bouton de recherche SLA",
+  "admin/editor.pickup-selector.pickup-sla-list.title": "Liste des options de points relais",
+  "admin/editor.pickup-selector.option-card.title": "Carte d'option des points relais",
+  "admin/editor.pickup-selector.pickup-point-name.title": "Nom du point relais",
+  "admin/editor.pickup-selector.pickup-point-address.title": "Adresse du point relais",
+  "admin/editor.pickup-selector.pickup-point-distance.title": "Distance du point relais",
+  "admin/editor.pickup-selector.select-pickup-point-button.title": "Bouton de sélection du point relais",
+  "admin/editor.pickup-selector.pickup-point-sla.title": "Sla du point relais",
+  "store/pickup-selector.zipcode-input.label": "Code postal",
+  "store/pickup-selector.search-sla-button.label": "Rechercher",
+  "store/pickup-selector.pickup-point-distance.error.label": "Distance inconnue",
+  "store/pickup-selector.select-pickup-point-button.label": "Ajouter au panier",
+  "store/pickup-selector.select-pickup-point-button.success": "Article ajouté au panier",
+  "store/pickup-selector.select-pickup-point-button.error": "Un problème est survenu et l’article n’a pas pu être ajouté à votre panier !",
+  "store/pickup-selector.pickup-sla-list.empty-list.title": "Nous n'avons pu trouver ce produit dans aucun magasin près de chez vous",
+  "store/pickup-selector.pickup-sla-list.empty-list.body": "Veuillez sélectionner un autre produit ou modifier le code postal pour rechercher d'autres magasins"
+}

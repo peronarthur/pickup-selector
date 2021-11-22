@@ -1,0 +1,20 @@
+{
+  "admin/editor.pickup-selector.title": "Selector punct de ridicare",
+  "admin/editor.pickup-selector.zipcode-input.title": "Cod poștal",
+  "admin/editor.pickup-selector.search-sla-button.title": "Buton de căutare SLA",
+  "admin/editor.pickup-selector.pickup-sla-list.title": "Lista opțiunilor punctelor de ridicare",
+  "admin/editor.pickup-selector.option-card.title": "Card opțiune punct de ridicare",
+  "admin/editor.pickup-selector.pickup-point-name.title": "Numele punctului de ridicare",
+  "admin/editor.pickup-selector.pickup-point-address.title": "Adresa punctului de ridicare",
+  "admin/editor.pickup-selector.pickup-point-distance.title": "Distanța punctului de ridicare",
+  "admin/editor.pickup-selector.select-pickup-point-button.title": "Buton selectare punct de ridicare",
+  "admin/editor.pickup-selector.pickup-point-sla.title": "SLA punct de ridicare",
+  "store/pickup-selector.zipcode-input.label": "Cod poștal",
+  "store/pickup-selector.search-sla-button.label": "Caută",
+  "store/pickup-selector.pickup-point-distance.error.label": "Distanță necunoscută",
+  "store/pickup-selector.select-pickup-point-button.label": "Adaugă în coș",
+  "store/pickup-selector.select-pickup-point-button.success": "Articolul a fost adăugat în coș",
+  "store/pickup-selector.select-pickup-point-button.error": "A apărut o eroare, iar articolul nu a putut fi adăugat în coșul tău!",
+  "store/pickup-selector.pickup-sla-list.empty-list.title": "Nu am putut găsi acest produs în niciun magazin din apropiere",
+  "store/pickup-selector.pickup-sla-list.empty-list.body": "Alege alt produs sau schimbă codul poștal pentru a căuta în alte magazine"
+}

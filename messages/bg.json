@@ -1,0 +1,20 @@
+{
+  "admin/editor.pickup-selector.title": "Селектор на място за получаване",
+  "admin/editor.pickup-selector.zipcode-input.title": "Пощенски код",
+  "admin/editor.pickup-selector.search-sla-button.title": "Бутон за търсене на SLA",
+  "admin/editor.pickup-selector.pickup-sla-list.title": "Списък с възможности за места за получаване",
+  "admin/editor.pickup-selector.option-card.title": "Карта с възможности за места за получаване",
+  "admin/editor.pickup-selector.pickup-point-name.title": "Име на място за получаване",
+  "admin/editor.pickup-selector.pickup-point-address.title": "Адрес на мястото за получаване",
+  "admin/editor.pickup-selector.pickup-point-distance.title": "Разстояние до мястото за получаване",
+  "admin/editor.pickup-selector.select-pickup-point-button.title": "Бутон за избор на място за получаване",
+  "admin/editor.pickup-selector.pickup-point-sla.title": "SLA на мястото за получаване",
+  "store/pickup-selector.zipcode-input.label": "Пощенски код",
+  "store/pickup-selector.search-sla-button.label": "Търсене",
+  "store/pickup-selector.pickup-point-distance.error.label": "Неизвестна разстояние",
+  "store/pickup-selector.select-pickup-point-button.label": "Добавяне в количката",
+  "store/pickup-selector.select-pickup-point-button.success": "Продуктът е добавен в количката",
+  "store/pickup-selector.select-pickup-point-button.error": "Нещо се обърка и продуктът не можа да бъде добавен в количката ви!",
+  "store/pickup-selector.pickup-sla-list.empty-list.title": "Не можахме да намерим този продукт в никой магазин близо до вас",
+  "store/pickup-selector.pickup-sla-list.empty-list.body": "Изберете друг продукт или изберете пощенския код, за да потърсите в други магазини"
+}

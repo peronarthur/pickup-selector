@@ -1,10 +1,10 @@
 {
-  "name": "Pick up point selector",
-  "headline": "Allow customers to select a pick up point inside the PDP.",
-  "overview": "The app enables the customer to search stores near by selected zip code directy in PDP, besides improve shopping experience allowing to add an item to the cart with selected a pick up point with only one click.",
+  "name": "Pickup point selector",
+  "headline": "It allows customers to select a pickup point in the PDP.",
+  "overview": "The app allows the customer to search for stores close to the selected ZIP code in the PDP, and improves the shopping experience by adding an item to the cart with the selected pickup point in one click.",
   "features": [
-    "Add a list of closest pick up points with stock of the selected product",
-    "Add a buy button that also selects the pick up point with one click"
+    "Adds a list of the closest pickup points with the selected product in stock",
+    "Adds a buy button that also selects the pickup point with one click"
   ],
   "websiteURL": "https://vtex.com/",
   "support": {

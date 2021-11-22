@@ -1,0 +1,20 @@
+{
+  "admin/editor.pickup-selector.title": "Selettore di punti di ritiro",
+  "admin/editor.pickup-selector.zipcode-input.title": "Codice postale",
+  "admin/editor.pickup-selector.search-sla-button.title": "Pulsante di ricerca SLA",
+  "admin/editor.pickup-selector.pickup-sla-list.title": "Lista di opzioni di punti di ritiro",
+  "admin/editor.pickup-selector.option-card.title": "Carta di opzione del punto di ritiro",
+  "admin/editor.pickup-selector.pickup-point-name.title": "Nome del punto di ritiro",
+  "admin/editor.pickup-selector.pickup-point-address.title": "Indirizzo del punto di ritiro",
+  "admin/editor.pickup-selector.pickup-point-distance.title": "Distanza del punto di ritiro",
+  "admin/editor.pickup-selector.select-pickup-point-button.title": "Pulsante di selezione del punto di ritiro",
+  "admin/editor.pickup-selector.pickup-point-sla.title": "SLA del punto di ritiro",
+  "store/pickup-selector.zipcode-input.label": "Codice postale",
+  "store/pickup-selector.search-sla-button.label": "Cerca",
+  "store/pickup-selector.pickup-point-distance.error.label": "Distanza sconosciuta",
+  "store/pickup-selector.select-pickup-point-button.label": "Aggiungi al carrello",
+  "store/pickup-selector.select-pickup-point-button.success": "Articolo aggiunto al carrello",
+  "store/pickup-selector.select-pickup-point-button.error": "Si è verificato un errore. Non è stato possibile aggiungere l'articolo al tuo carrello.",
+  "store/pickup-selector.pickup-sla-list.empty-list.title": "Non è stato possibile trovare questo prodotto in nessun negozio che si trovi nei tuoi dintorni.",
+  "store/pickup-selector.pickup-sla-list.empty-list.body": "Seleziona un altro prodotto o cambia il codice postale per cercare in altri negozi."
+}

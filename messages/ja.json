@@ -1,0 +1,20 @@
+{
+  "admin/editor.pickup-selector.title": "ピックアップポイントセレクター",
+  "admin/editor.pickup-selector.zipcode-input.title": "郵便番号",
+  "admin/editor.pickup-selector.search-sla-button.title": "SLA 検索ボタン",
+  "admin/editor.pickup-selector.pickup-sla-list.title": "ピックアップポイントオプションのリスト",
+  "admin/editor.pickup-selector.option-card.title": "ピックアップポイントオプションカード",
+  "admin/editor.pickup-selector.pickup-point-name.title": "ピックアップポイント名",
+  "admin/editor.pickup-selector.pickup-point-address.title": "ピックアップポイントのアドレス",
+  "admin/editor.pickup-selector.pickup-point-distance.title": "ピックアップポイントの距離",
+  "admin/editor.pickup-selector.select-pickup-point-button.title": "ピックアップポイント選択ボタン",
+  "admin/editor.pickup-selector.pickup-point-sla.title": "ピックアップポイント SLA",
+  "store/pickup-selector.zipcode-input.label": "郵便番号",
+  "store/pickup-selector.search-sla-button.label": "検索",
+  "store/pickup-selector.pickup-point-distance.error.label": "距離不明",
+  "store/pickup-selector.select-pickup-point-button.label": "カートに追加",
+  "store/pickup-selector.select-pickup-point-button.success": "カートに追加された項目",
+  "store/pickup-selector.select-pickup-point-button.error": "エラーが発生しました。項目はカートに追加できません！",
+  "store/pickup-selector.pickup-sla-list.empty-list.title": "近隣の店舗ではこの製品が見つかりませんでした",
+  "store/pickup-selector.pickup-sla-list.empty-list.body": "別の製品を選ぶか、または郵便番号を変更して別の店舗を検索してください"
+}
