@@ -22,7 +22,7 @@ You can follow the steps to configure the app on your store theme
 
 ### 1. Install the app in your workspace and account `vtex install vtex.pickup-selector`
 
-### 1. Add the app as a theme dependency in the `manifest.json` file;
+### 2. Add the app as a theme dependency in the `manifest.json` file;
 
 ```json
   "peerDependencies": {
