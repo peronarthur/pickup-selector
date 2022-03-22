@@ -1,5 +1,5 @@
 {
-  "name": "Selector de puntos de recogida",
+  "name": "Selector de Puntos de Recogida",
   "headline": "Permite a los clientes seleccionar un punto de recogida en la página de producto (PDP).",
   "overview": "La aplicación permite al cliente buscar tiendas cerca del código postal en la página de producto (PDP) y mejora la experiencia de compra al agregar un ítem al carrito con el punto de recogida seleccionado con un solo clic.",
   "features": [

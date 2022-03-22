@@ -1,5 +1,5 @@
 {
-  "name": "Pickup point selector",
+  "name": "Pickup Point Selector",
   "headline": "It allows customers to select a pickup point in the PDP.",
   "overview": "The app allows the customer to search for stores close to the selected ZIP code in the PDP, and improves the shopping experience by adding an item to the cart with the selected pickup point in one click.",
   "features": [
