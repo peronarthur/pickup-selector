@@ -10,8 +10,6 @@
 <!-- ALL-CONTRIBUTORS-BADGE:END -->
 <!-- DOCS-IGNORE:end -->
 
-> 🚧 THIS IS A WORK IN PROGRESS AND SHOULD NOT BE USED IN PRODUCTION!
-
 The pickup point selector app adds a block where the client can add a product to cart and select a pickup point for it with the same action. The list of options is created by running a simulation using the selected SKU and the zipcode the client inputed.
 
 > 🚨 Warning: This app should only be used inside the product page, since one of its dependencies is the product-context
