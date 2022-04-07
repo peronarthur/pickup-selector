@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Chore
+
+- Upgrade root folder dependencies
+
 ## [2.0.1] - 2022-04-07
 
 ### Chore
