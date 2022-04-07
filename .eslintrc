@@ -3,5 +3,10 @@
   "root": true,
   "env": {
     "node": true
+  },
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
   }
 }

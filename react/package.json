@@ -22,15 +22,15 @@
     "apollo-cache-inmemory": "^1.6.5",
     "graphql": "^14.6.0",
     "typescript": "3.9.7",
-    "vtex.checkout-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-graphql@0.63.0/public/@types/vtex.checkout-graphql",
+    "vtex.checkout-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.checkout-graphql@0.65.1/public/@types/vtex.checkout-graphql",
     "vtex.css-handles": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.css-handles@1.0.0/public/@types/vtex.css-handles",
     "vtex.order-manager": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.order-manager@0.11.1/public/@types/vtex.order-manager",
-    "vtex.pickup-selector": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.pickup-selector@0.10.0/public/@types/vtex.pickup-selector",
+    "vtex.pickup-selector": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.pickup-selector@2.0.0/public/@types/vtex.pickup-selector",
     "vtex.pixel-manager": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.pixel-manager@1.8.0/public/@types/vtex.pixel-manager",
     "vtex.places-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.places-graphql@0.4.0/public/@types/vtex.places-graphql",
     "vtex.product-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-context@0.10.0/public/@types/vtex.product-context",
-    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.3/public/@types/vtex.render-runtime",
+    "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.132.4/public/@types/vtex.render-runtime",
     "vtex.shipping-estimate-translator": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shipping-estimate-translator@2.2.2/public/@types/vtex.shipping-estimate-translator",
-    "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.145.2/public/@types/vtex.styleguide"
+    "vtex.styleguide": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.1/public/@types/vtex.styleguide"
   }
 }
