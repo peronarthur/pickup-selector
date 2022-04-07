@@ -13,39 +13,40 @@ type PickupPointDistanceProps = {
   distanceSystem?: 'metric' | 'imperial'
 }
 
-const PickupPointDistance: StorefrontFunctionComponent<PickupPointDistanceProps> =
-  ({ distanceSystem = 'metric' }) => {
-    const { handles } = useCssHandles(CSS_HANDLES)
+const PickupPointDistance: StorefrontFunctionComponent<
+  PickupPointDistanceProps
+> = ({ distanceSystem = 'metric' }) => {
+  const { handles } = useCssHandles(CSS_HANDLES)
 
-    const intl = useIntl()
-    const { index } = useContext(CardContext)
-    const { pickupSlas } = useContext(ShippingContext)
-    const { storeDistance } = pickupSlas[index]
-    const systemUnit = distanceSystem === 'metric' ? 'Km' : 'Mi'
+  const intl = useIntl()
+  const { index } = useContext(CardContext)
+  const { pickupSlas } = useContext(ShippingContext)
+  const { storeDistance } = pickupSlas[index]
+  const systemUnit = distanceSystem === 'metric' ? 'Km' : 'Mi'
 
-    const formatDistance = useMemo(() => {
-      if (storeDistance) {
-        if (distanceSystem === 'imperial') {
-          const calculateImperial = storeDistance * IMPERIAL_SYSTEM_MULTIPLIER
+  const formatDistance = useMemo(() => {
+    if (storeDistance) {
+      if (distanceSystem === 'imperial') {
+        const calculateImperial = storeDistance * IMPERIAL_SYSTEM_MULTIPLIER
 
-          return `${calculateImperial.toFixed(DECIMALS)} ${systemUnit}`
-        }
-
-        return `${storeDistance.toFixed(DECIMALS)} ${systemUnit}`
+        return `${calculateImperial.toFixed(DECIMALS)} ${systemUnit}`
       }
 
-      return intl.formatMessage(pickupPointDistance.label)
-    }, [distanceSystem, storeDistance, intl, systemUnit])
+      return `${storeDistance.toFixed(DECIMALS)} ${systemUnit}`
+    }
 
-    return (
-      <p
-        className={`${handles.pickupPointDistance} t-small mw6`}
-        data-testid="distance"
-      >
-        {formatDistance}
-      </p>
-    )
-  }
+    return intl.formatMessage(pickupPointDistance.label)
+  }, [distanceSystem, storeDistance, intl, systemUnit])
+
+  return (
+    <p
+      className={`${handles.pickupPointDistance} t-small mw6`}
+      data-testid="distance"
+    >
+      {formatDistance}
+    </p>
+  )
+}
 
 PickupPointDistance.schema = {
   title: siteEditor.pickupPointDistance.title.id,
