@@ -18,13 +18,13 @@ The pickup point selector app adds a block where the client can add a product to
 
 You can follow the steps to configure the app on your store theme
 
-### 1. Install the app in your workspace and account `vtex install vtex.pickup-selector`
+### 1. Install the app in your workspace and account `vtex install vtexbr.pickup-selector`
 
 ### 2. Add the app as a theme dependency in the `manifest.json` file;
 
 ```json
   "peerDependencies": {
-    "vtex.pickup-selector": "1.x"
+    "vtexbr.pickup-selector": "2.x"
   }
 ```
 
