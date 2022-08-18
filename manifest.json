@@ -20,15 +20,11 @@
     "vtex.shipping-estimate-translator": "2.x",
     "vtex.pixel-manager": "1.x"
   },
-  "registries": [
-    "smartcheckout"
-  ],
+  "registries": ["smartcheckout"],
   "policies": [],
   "billingOptions": {
     "type": "billable",
-    "availableCountries": [
-      "*"
-    ],
+    "availableCountries": ["*"],
     "plans": [
       {
         "id": "PlanBRL",
@@ -41,7 +37,7 @@
         "id": "PlanUSD",
         "currency": "USD",
         "price": {
-          "subscription": 25
+          "subscription": 5
         }
       }
     ],
